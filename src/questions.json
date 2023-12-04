@@ -1,0 +1,57 @@
+[
+	{
+		"quest": "Ce faci?",
+		"choices": [
+			{ "str": "F bine", "isCorrect": false },
+			{ "str": "Bine", "isCorrect": false },
+			{ "str": "Tare", "isCorrect": true },
+			{ "str": "Misto", "isCorrect": false }
+		]
+	},
+
+	{
+		"quest": "Andreea e misto?",
+		"choices": [
+			{ "str": "nu", "isCorrect": false },
+			{ "str": "CLAR", "isCorrect": false },
+			{ "str": "ABSOLUT", "isCorrect": true },
+			{ "str": "Excelent", "isCorrect": false }
+		]
+	},
+	{
+		"quest": "Andreea e misto?",
+		"choices": [
+			{ "str": "nu", "isCorrect": false },
+			{ "str": "CLAR", "isCorrect": false },
+			{ "str": "ABSOLUT", "isCorrect": true },
+			{ "str": "Excelent", "isCorrect": false }
+		]
+	},
+	{
+		"quest": "Andreea e misto?",
+		"choices": [
+			{ "str": "nu", "isCorrect": false },
+			{ "str": "CLAR", "isCorrect": false },
+			{ "str": "ABSOLUT", "isCorrect": true },
+			{ "str": "Excelent", "isCorrect": false }
+		]
+	},
+	{
+		"quest": "Andreea e misto?",
+		"choices": [
+			{ "str": "nu", "isCorrect": false },
+			{ "str": "CLAR", "isCorrect": false },
+			{ "str": "ABSOLUT", "isCorrect": true },
+			{ "str": "Excelent", "isCorrect": false }
+		]
+	},
+	{
+		"quest": "Andreea e misto?",
+		"choices": [
+			{ "str": "nu", "isCorrect": false },
+			{ "str": "CLAR", "isCorrect": false },
+			{ "str": "ABSOLUT", "isCorrect": true },
+			{ "str": "Excelent", "isCorrect": false }
+		]
+	}
+]
