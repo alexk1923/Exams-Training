@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import questions, { ChoiceType, QuestionType } from "./questions";
+import { ChoiceType, QuestionType } from "./questions";
 
 enum AnsweredQuestionState {
 	CORRECT = "CORRECT",
