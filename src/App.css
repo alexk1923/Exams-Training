@@ -20,9 +20,6 @@
 	font-size: 1rem;
 }
 
-.question-container {
-}
-
 .question {
 	font-size: 1rem;
 	border: 1px solid #d2d2d2;
@@ -31,7 +28,7 @@
 }
 
 .red {
-	background-color: red;
+	background-color: rgb(239, 117, 117);
 	color: white;
 }
 
@@ -39,4 +36,17 @@
 	background-color: green;
 	color: white;
 	font-weight: bold;
+}
+
+.search-bar input {
+	color: white;
+	border-radius: 999em;
+	padding: 0.5rem 1rem;
+	margin-top: 10px;
+	background-color: rgb(5, 97, 128);
+	color: white;
+}
+
+.search-bar input::placeholder {
+	color: #d2d2d2;
 }

@@ -18,6 +18,7 @@ function App() {
 	const [filteredQuestions, setFilteredQuestions] = useState<QuestionType[]>(
 		[]
 	);
+	const [searchQuestion, setSearchQuestion] = useState<string>("");
 
 	useEffect(() => {
 		if (scrollId >= 0 && scrollId < questions.length) {
@@ -60,6 +61,10 @@ function App() {
 		} else {
 			setCurrentSection(sectionClicked);
 		}
+	};
+
+	const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+		setSearchQuestion(e.target.value);
 	};
 
 	useEffect(() => {
@@ -106,17 +111,44 @@ function App() {
 					))}
 				</div>
 
-				{filteredQuestions.map((question, index) => (
-					<div ref={refs.current[index]} key={question.id}>
-						<Question
-							question={question}
-							key={question.id}
-							setScrollId={setScrollId}
-							originalId={question.id}
-							randomIdx={index}
-						/>
-					</div>
-				))}
+				<div className='search-bar'>
+					<input
+						type='search'
+						placeholder='Search for a question'
+						value={searchQuestion}
+						onChange={handleSearchChange}
+					/>
+				</div>
+
+				{searchQuestion.length > 0
+					? questions
+							.filter((question) =>
+								question.quest
+									.toLowerCase()
+									.includes(searchQuestion.toLowerCase())
+							)
+							.map((question) => (
+								<div className=''>
+									<Question
+										question={question}
+										key={question.id}
+										setScrollId={setScrollId}
+										originalId={question.id}
+										randomIdx={question.id}
+									/>
+								</div>
+							))
+					: filteredQuestions.map((question, index) => (
+							<div ref={refs.current[index]} key={question.id}>
+								<Question
+									question={question}
+									key={question.id}
+									setScrollId={setScrollId}
+									originalId={question.id}
+									randomIdx={index}
+								/>
+							</div>
+					  ))}
 			</div>
 		</>
 	);
