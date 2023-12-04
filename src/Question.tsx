@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ChoiceType, QuestionType } from "./questions";
+import { QuestionType, ChoiceType } from "./types/types";
 
 enum AnsweredQuestionState {
 	CORRECT = "CORRECT",
@@ -11,11 +11,15 @@ type AnsweredQuestion = {
 	state: AnsweredQuestionState;
 };
 
-export default function Question(props: {
+type QuestionProps = {
 	question: QuestionType;
 	setScrollId: React.Dispatch<React.SetStateAction<number>>;
-}) {
-	const { question, setScrollId } = props;
+	originalId: number;
+	randomIdx: number;
+};
+
+export default function Question(props: QuestionProps) {
+	const { question, setScrollId, originalId, randomIdx } = props;
 	const [selectedAnswers, setSelectedAnswers] = useState<AnsweredQuestion[]>(
 		[]
 	);
@@ -34,7 +38,7 @@ export default function Question(props: {
 			}
 
 			if (answeredQuestion.state === AnsweredQuestionState.WRONG) {
-				if (!questionChoice.isCorrect) {
+				if (questionChoice.isCorrect === undefined) {
 					return "red";
 				}
 			}
@@ -42,7 +46,6 @@ export default function Question(props: {
 	};
 
 	const handleAnswerClick = (choice: ChoiceType, questionId: number) => {
-		console.log(choice);
 		setSelectedAnswers((prevAns) => {
 			const state = choice.isCorrect
 				? AnsweredQuestionState.CORRECT
@@ -54,14 +57,16 @@ export default function Question(props: {
 	useEffect(() => {
 		// Use useEffect to perform the state update after the rendering is complete
 		if (selectedAnswers.length > 0) {
-			const lastAnsweredQuestion = selectedAnswers[selectedAnswers.length - 1];
-			setScrollId(lastAnsweredQuestion.id + 1);
+			// const lastAnsweredQuestion = selectedAnswers[selectedAnswers.length - 1];
+			setScrollId(randomIdx + 1);
 		}
-	}, [selectedAnswers, setScrollId]);
+	}, [selectedAnswers, setScrollId, randomIdx]);
 
 	return (
 		<div className='question-container'>
-			<h3>{question.quest}</h3>
+			<h4>
+				{originalId + 1}. {question.quest}
+			</h4>
 			{question.choices.map((questionChoice) => (
 				<div
 					className={

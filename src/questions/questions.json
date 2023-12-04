@@ -1,0 +1,31 @@
+[
+	{
+		"quest": "Ce faci?",
+		"choices": [
+			{ "str": "F bine" },
+			{ "str": "Bine" },
+			{ "str": "Tare", "isCorrect": true },
+			{ "str": "Misto" }
+		]
+	},
+
+	{
+		"quest": "Andreea e misto?",
+		"choices": [
+			{ "str": "nu" },
+			{ "str": "CLAR" },
+			{ "str": "ABSOLUT", "isCorrect": true },
+			{ "str": "Excelent" }
+		]
+	},
+
+	{
+		"quest": "Andreea e misto?",
+		"choices": [
+			{ "str": "nu" },
+			{ "str": "CLAR" },
+			{ "str": "ABSOLUT", "isCorrect": true },
+			{ "str": "Excelent" }
+		]
+	}
+]
