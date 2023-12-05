@@ -19,7 +19,7 @@ function App() {
 		[]
 	);
 	const [searchQuestion, setSearchQuestion] = useState<string>("");
-
+	const [rerenderQuestions, setRerenderQuestions] = useState<boolean>(false);
 	useEffect(() => {
 		if (scrollId >= 0 && scrollId < questions.length) {
 			refs.current[scrollId].current?.scrollIntoView({
@@ -32,7 +32,7 @@ function App() {
 		const start = SECTION_SIZE * (currentSection - 1);
 		const end = SECTION_SIZE * currentSection;
 
-		setFilteredQuestions(shuffleQuestions(questions.slice(start, end)));
+		setFilteredQuestions([...shuffleQuestions(questions.slice(start, end))]);
 	}, [questions, currentSection]);
 
 	useEffect(() => {
@@ -46,18 +46,15 @@ function App() {
 
 		fileReader.readAsText(e.target.files[0], "UTF-8");
 		fileReader.onload = (e) => {
-			// setFiles(e.target.result);
 			setQuestions(addUniqueId(JSON.parse(e.target?.result as string)));
 		};
 	};
 
-	const handleChangeSection = (e: React.MouseEvent<HTMLButtonElement>) => {
-		const sectionClicked = Number((e.target as HTMLButtonElement).value);
-
+	const handleChangeSection = (sectionClicked: number) => {
 		if (currentSection === sectionClicked) {
-			setFilteredQuestions((filteredQuestions) =>
-				shuffleQuestions(filteredQuestions)
-			);
+			const arr = [...filteredQuestions];
+			setFilteredQuestions(shuffleQuestions(arr));
+			setRerenderQuestions((prevRerenderQuestions) => !prevRerenderQuestions);
 		} else {
 			setCurrentSection(sectionClicked);
 		}
@@ -70,6 +67,7 @@ function App() {
 	useEffect(() => {
 		setNumberOfSections(Math.floor(questions.length / SECTION_SIZE) + 1);
 	}, [questions]);
+
 	return (
 		<>
 			<div className='container'>
@@ -102,7 +100,11 @@ function App() {
 
 				<div style={{ display: "flex", flexWrap: "wrap" }}>
 					{Array.from({ length: numberOfSections }, (_, index) => (
-						<button onClick={handleChangeSection} key={index} value={index + 1}>
+						<button
+							onClick={() => handleChangeSection(index + 1)}
+							key={index}
+							value={index + 1}
+						>
 							{index * SECTION_SIZE +
 								1 +
 								"-" +
@@ -135,6 +137,7 @@ function App() {
 										setScrollId={setScrollId}
 										originalId={question.id}
 										randomIdx={question.id}
+										rerenderQuestions={rerenderQuestions}
 									/>
 								</div>
 							))
@@ -142,10 +145,10 @@ function App() {
 							<div ref={refs.current[index]} key={question.id}>
 								<Question
 									question={question}
-									key={question.id}
 									setScrollId={setScrollId}
 									originalId={question.id}
 									randomIdx={index}
+									rerenderQuestions={rerenderQuestions}
 								/>
 							</div>
 					  ))}

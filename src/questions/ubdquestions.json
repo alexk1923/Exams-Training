@@ -88,8 +88,8 @@
 		"quest": "In cazul unui user identificat prin parola, care dintre parolele de mai jos este gresita:",
 		"choices": [
 			{ "str": "A12345678901234567891234567890" },
-			{ "str": "PA_$#ROLA$#_USER12345678901234", "isCorrect": true },
-			{ "str": "PAROLA_USER_1_1234%67890123" }
+			{ "str": "PA_$#ROLA$#_USER12345678901234" },
+			{ "str": "PAROLA_USER_1_1234%67890123", "isCorrect": true }
 		]
 	},
 	{
@@ -425,8 +425,8 @@
 		"quest": "Un user Oracle interactioneaza direct cu:",
 		"choices": [
 			{ "str": "Serverul Oracle" },
-			{ "str": "Un proces server", "isCorrect": true },
-			{ "str": "Un proces user" }
+			{ "str": "Un proces server" },
+			{ "str": "Un proces user", "isCorrect": true }
 		]
 	},
 	{
@@ -661,8 +661,8 @@
 	{
 		"quest": "Fortarea unui checkpoint se face cu comanda:",
 		"choices": [
-			{ "str": "ALTER SYSTEM CHECKPOINT" },
-			{ "str": "ALTER SESSION CHECKPOINT", "isCorrect": true },
+			{ "str": "ALTER SYSTEM CHECKPOINT", "isCorrect": true },
+			{ "str": "ALTER SESSION CHECKPOINT" },
 			{ "str": "ALTER DATABASE CHECKPOINT" }
 		]
 	},

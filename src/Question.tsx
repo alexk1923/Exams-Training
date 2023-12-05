@@ -7,8 +7,7 @@ enum AnsweredQuestionState {
 }
 
 type AnsweredQuestion = {
-	id: number;
-	state: AnsweredQuestionState;
+	state: AnsweredQuestionState | null;
 };
 
 type QuestionProps = {
@@ -16,28 +15,23 @@ type QuestionProps = {
 	setScrollId: React.Dispatch<React.SetStateAction<number>>;
 	originalId: number;
 	randomIdx: number;
+	rerenderQuestions: boolean;
 };
 
 export default function Question(props: QuestionProps) {
-	const { question, setScrollId, originalId, randomIdx } = props;
-	const [selectedAnswers, setSelectedAnswers] = useState<AnsweredQuestion[]>(
-		[]
-	);
+	const { question, setScrollId, originalId, randomIdx, rerenderQuestions } =
+		props;
+	const [selectedAnswer, setSelectedAnswer] = useState<AnsweredQuestion>({
+		state: null,
+	});
 
-	const getQuestionStateStyle = (
-		questionId: number,
-		questionChoice: ChoiceType
-	) => {
-		const answeredQuestion = selectedAnswers.find(
-			(ansQuestion) => ansQuestion.id == questionId
-		);
-
-		if (answeredQuestion) {
+	const getQuestionStateStyle = (questionChoice: ChoiceType) => {
+		if (selectedAnswer.state) {
 			if (questionChoice.isCorrect) {
 				return "green";
 			}
 
-			if (answeredQuestion.state === AnsweredQuestionState.WRONG) {
+			if (selectedAnswer.state === AnsweredQuestionState.WRONG) {
 				if (questionChoice.isCorrect === undefined) {
 					return "red";
 				}
@@ -45,34 +39,36 @@ export default function Question(props: QuestionProps) {
 		}
 	};
 
-	const handleAnswerClick = (choice: ChoiceType, questionId: number) => {
-		setSelectedAnswers((prevAns) => {
+	const handleAnswerClick = (choice: ChoiceType) => {
+		setSelectedAnswer((prevSelectedAnswer) => {
 			const state = choice.isCorrect
 				? AnsweredQuestionState.CORRECT
 				: AnsweredQuestionState.WRONG;
-			return [...prevAns, { id: questionId, state }];
+			return { ...prevSelectedAnswer, state };
 		});
 	};
 
 	useEffect(() => {
-		// Use useEffect to perform the state update after the rendering is complete
-		if (selectedAnswers.length > 0) {
-			// const lastAnsweredQuestion = selectedAnswers[selectedAnswers.length - 1];
+		if (selectedAnswer.state) {
 			setScrollId(randomIdx + 1);
 		}
-	}, [selectedAnswers, setScrollId, randomIdx]);
+	}, [selectedAnswer, setScrollId, randomIdx]);
+
+	useEffect(() => {
+		setScrollId(0);
+		setSelectedAnswer({ state: null });
+	}, [rerenderQuestions, setScrollId]);
 
 	return (
 		<div className='question-container'>
 			<h4>
 				{originalId + 1}. {question.quest}
 			</h4>
-			{question.choices.map((questionChoice) => (
+			{question.choices.map((questionChoice, idx) => (
 				<div
-					className={
-						`question ` + getQuestionStateStyle(question.id, questionChoice)
-					}
-					onClick={() => handleAnswerClick(questionChoice, question.id)}
+					className={`question ` + getQuestionStateStyle(questionChoice)}
+					onClick={() => handleAnswerClick(questionChoice)}
+					key={idx}
 				>
 					{questionChoice.str}
 				</div>
