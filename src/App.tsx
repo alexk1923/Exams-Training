@@ -18,6 +18,7 @@ function App() {
 	const [filteredQuestions, setFilteredQuestions] = useState<QuestionType[]>(
 		[]
 	);
+	const [allMode, setAllMode] = useState(false);
 	const [searchQuestion, setSearchQuestion] = useState<string>("");
 	const [rerenderQuestions, setRerenderQuestions] = useState<boolean>(false);
 	useEffect(() => {
@@ -34,6 +35,12 @@ function App() {
 
 		setFilteredQuestions([...shuffleQuestions(questions.slice(start, end))]);
 	}, [questions, currentSection]);
+
+	useEffect(() => {
+		setFilteredQuestions(
+			shuffleQuestions(questions.slice(0, questions.length - 1))
+		);
+	}, [allMode]);
 
 	useEffect(() => {
 		refs.current = questions.map(() => React.createRef());
@@ -111,6 +118,7 @@ function App() {
 								Math.min(questions.length, (index + 1) * SECTION_SIZE)}
 						</button>
 					))}
+					<button onClick={() => setAllMode((oldMode) => !oldMode)}>All</button>
 				</div>
 
 				<div className='search-bar'>
