@@ -61,8 +61,7 @@ export default function Question(props: QuestionProps) {
 	}, [rerenderQuestions, setScrollId]);
 
 	useEffect(() => {
-		question.choices = shuffleQuestions(question.choices);
-		console.log(question.choices);
+		question.choices = shuffleQuestions(question.choices) as ChoiceType[];
 	}, [question, rerenderQuestions]);
 
 	return (

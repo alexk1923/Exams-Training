@@ -1,9 +1,3 @@
-#root {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 2rem;
-}
-
 .card {
 	padding: 2em;
 }
@@ -18,6 +12,8 @@
 	flex-direction: column;
 	padding: 10px;
 	font-size: 1rem;
+	max-width: 1280px;
+	margin: 0 auto;
 }
 
 .question {
@@ -49,4 +45,20 @@
 
 .search-bar input::placeholder {
 	color: #d2d2d2;
+}
+
+.default-question-item {
+	max-width: 100%;
+	padding: 8px;
+	border: 1px solid #d2d2d2;
+}
+
+.default-questions-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: white;
+	width: 15%;
+	max-width: 25%;
+	padding: 8px;
 }

@@ -1,7 +1,7 @@
-import { QuestionDefault, QuestionType } from "../types/types";
+import { ChoiceType, QuestionDefault, QuestionType } from "../types/types";
 
 
-function shuffleQuestions(array: any[]) {
+function shuffleQuestions(array: QuestionType[] | ChoiceType[]) {
     const newArr = [...array];
     newArr.sort(() => Math.random() - 0.5);
     return newArr;

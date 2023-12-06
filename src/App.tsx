@@ -33,14 +33,18 @@ function App() {
 		const start = SECTION_SIZE * (currentSection - 1);
 		const end = SECTION_SIZE * currentSection;
 
-		setFilteredQuestions([...shuffleQuestions(questions.slice(start, end))]);
+		setFilteredQuestions(
+			shuffleQuestions(questions.slice(start, end)) as QuestionType[]
+		);
 	}, [questions, currentSection]);
 
 	useEffect(() => {
 		setFilteredQuestions(
-			shuffleQuestions(questions.slice(0, questions.length - 1))
+			shuffleQuestions(
+				questions.slice(0, questions.length - 1)
+			) as QuestionType[]
 		);
-	}, [allMode]);
+	}, [allMode, questions]);
 
 	useEffect(() => {
 		refs.current = questions.map(() => React.createRef());
@@ -60,7 +64,7 @@ function App() {
 	const handleChangeSection = (sectionClicked: number) => {
 		if (currentSection === sectionClicked) {
 			const arr = [...filteredQuestions];
-			setFilteredQuestions(shuffleQuestions(arr));
+			setFilteredQuestions(shuffleQuestions(arr) as QuestionType[]);
 			setRerenderQuestions((prevRerenderQuestions) => !prevRerenderQuestions);
 		} else {
 			setCurrentSection(sectionClicked);
@@ -75,9 +79,36 @@ function App() {
 		setNumberOfSections(Math.floor(questions.length / SECTION_SIZE) + 1);
 	}, [questions]);
 
+	const handleChooseDefault = async (fileName: string) => {
+		// Remove .json ending
+		fileName = fileName.split(".").slice(0, -1).join(".");
+		try {
+			const jsonModule = await import(`./questions/${fileName}.json`);
+			const jsonData = jsonModule.default;
+			setQuestions(addUniqueId(jsonData));
+		} catch (err) {
+			alert(err);
+			return;
+		}
+	};
+
+	const defaultFiles = ["ubdquestions.json"];
+
 	return (
-		<>
-			<div className='container'>
+		<div style={{ width: "100vw", display: "" }}>
+			<div className='container w-[20px]'>
+				<div className='default-questions-container'>
+					<h2>Choose from default questions</h2>
+					{defaultFiles.map((defaultFile) => (
+						<div
+							className='default-question-item'
+							onClick={() => handleChooseDefault(defaultFile)}
+						>
+							{defaultFile}
+						</div>
+					))}
+				</div>
+
 				<div
 					style={{
 						display: "flex",
@@ -118,7 +149,13 @@ function App() {
 								Math.min(questions.length, (index + 1) * SECTION_SIZE)}
 						</button>
 					))}
-					<button onClick={() => setAllMode((oldMode) => !oldMode)}>All</button>
+					<button
+						onClick={() => {
+							setAllMode((oldMode) => !oldMode);
+						}}
+					>
+						All
+					</button>
 				</div>
 
 				<div className='search-bar'>
@@ -161,7 +198,7 @@ function App() {
 							</div>
 					  ))}
 			</div>
-		</>
+		</div>
 	);
 }
 
