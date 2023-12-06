@@ -1,7 +1,7 @@
 import { QuestionDefault, QuestionType } from "../types/types";
 
 
-function shuffleQuestions(array: QuestionType[]) {
+function shuffleQuestions(array: any[]) {
     const newArr = [...array];
     newArr.sort(() => Math.random() - 0.5);
     return newArr;

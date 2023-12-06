@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { QuestionType, ChoiceType } from "./types/types";
+import { shuffleQuestions } from "./utils/utils";
 
 enum AnsweredQuestionState {
 	CORRECT = "CORRECT",
@@ -58,6 +59,11 @@ export default function Question(props: QuestionProps) {
 		setScrollId(0);
 		setSelectedAnswer({ state: null });
 	}, [rerenderQuestions, setScrollId]);
+
+	useEffect(() => {
+		question.choices = shuffleQuestions(question.choices);
+		console.log(question.choices);
+	}, [question, rerenderQuestions]);
 
 	return (
 		<div className='question-container'>
