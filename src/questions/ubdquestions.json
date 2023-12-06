@@ -1140,5 +1140,91 @@
 			{ "str": "0", "isCorrect": true },
 			{ "str": "Intre 1 si 2" }
 		]
+	},
+	{
+		"quest": "Procesul server este:",
+		"choices": [
+			{ "str": "Unul dintre procesele de background" },
+			{
+				"str": "Un proces care deserveste unul sau mai multe procese client",
+				"isCorrect": true
+			},
+			{ "str": "Un proces care apartine SGA" }
+		]
+	},
+	{
+		"quest": "DBWRITER este parte:",
+		"choices": [
+			{ "str": "Procesului client" },
+			{ "str": "Procesului server" },
+			{ "str": "Instantei Oracle", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Buffer cache este parte a:",
+		"choices": [
+			{ "str": "Procesului client" },
+			{ "str": "PGA" },
+			{ "str": "SGA", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Etapele procesarii unei cereri sunt, in ordine:",
+		"choices": [
+			{ "str": "Execute Fetch Parse" },
+			{ "str": "Parse Execute Fetch", "isCorrect": true },
+			{ "str": "Execute Parse Fetch" }
+		]
+	},
+	{
+		"quest": "Ce poate fi stocat in mai mult de un fisier de date:",
+		"choices": [
+			{ "str": "Extensie, Segment si Tablespace" },
+			{ "str": "Segment si Tablespace", "isCorrect": true },
+			{ "str": "Tablespace" }
+		]
+	},
+	{
+		"quest": "Fisierele de control sunt scrise:",
+		"choices": [
+			{ "str": "In paralel (multiplexat)", "isCorrect": true },
+			{ "str": "In serie (unul dupa altul)" },
+			{ "str": "Nici a nici b nu sunt corecte" }
+		]
+	},
+	{
+		"quest": "Membrii unui grup de fisiere redo log sunt scrisi:",
+		"choices": [
+			{ "str": "In paralel (multiplexat)", "isCorrect": true },
+			{ "str": "In serie (unul dupa altul)" },
+			{ "str": "Nici a nici b nu sunt corecte" }
+		]
+	},
+	{
+		"quest": "Fisierele de redo-log sunt scrie de:",
+		"choices": [
+			{ "str": "Procesul server" },
+			{ "str": "Procesul client" },
+			{
+				"str": "Nici a nici b nu sunt corecte, se foloseste procesul LGWR",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Un tablespace poate deveni OFFLINE:",
+		"choices": [
+			{ "str": "Inca de la creare" },
+			{ "str": "Dupa ce a fost creat ONLINE" },
+			{ "str": "a si b sunt adevarate", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "HWM poate fi mutat in sus:",
+		"choices": [
+			{ "str": "Ca efect al unor comenzi DML", "isCorrect": true },
+			{ "str": "Ca efect al unor comenzi DDL" },
+			{ "str": "Nici a nici b nu sunt corecte" }
+		]
 	}
 ]
