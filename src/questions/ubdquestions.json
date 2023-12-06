@@ -1,160 +1,10 @@
 [
 	{
-		"quest": "Cand o tranzactie este comisa (COMMIT) se scriu pe disc:",
-		"choices": [
-			{ "str": "Inregistrari din Instant Memory" },
-			{ "str": "Inregistrari din Redo Log", "isCorrect": true },
-			{ "str": "Blocurile de date modificate" }
-		]
-	},
-	{
-		"quest": "Prin intermediul profilului se pot restrictiona printre altele:",
-		"choices": [
-			{
-				"str": "Resurse referitoare la sistem si la parola",
-				"isCorrect": true
-			},
-			{ "str": "Numarul de procese de background per user" },
-			{ "str": "Resurse referitoare la spatiul alocat pe disc" }
-		]
-	},
-	{
-		"quest": "Discretizarea face parte din etapa de:",
-		"choices": [
-			{
-				"str": "Extragerea modelelor și descoperirea cunoștințelor"
-			},
-			{ "str": "Vizualizare" },
-			{ "str": "Preprocesarea datelor", "isCorrect": true }
-		]
-	},
-
-	{
-		"quest": "“Binning”: daca avem o cutie (“bin”) conținând valorile 4, 8, 9, 15, prin netezirea folosind capetele intervalului obținem:",
-		"choices": [
-			{
-				"str": "4, 4, 15, 15"
-			},
-			{ "str": "4, 4, 4, 15", "isCorrect": true },
-			{ "str": "9, 9, 9, 9" }
-		]
-	},
-	{
-		"quest": "Sumarul de 5 numere (Five number summary) conține printre altele:",
-		"choices": [
-			{
-				"str": "Cuartilele și Cvintilele"
-			},
-			{ "str": "Minimul și maximul", "isCorrect": true },
-			{ "str": "Media și mediana" }
-		]
-	},
-	{
-		"quest": "In cazul lansarii unei operatii de oprire a bazei de date, sunt permise noi conexiuni in cazul opririi:",
-		"choices": [
-			{
-				"str": "Normale"
-			},
-			{ "str": "Nu se mai permit noi conexiuni", "isCorrect": true },
-			{ "str": "Tranzactionale" }
-		]
-	},
-	{
-		"quest": "Care afirmatie este adevarata:",
-		"choices": [
-			{
-				"str": "Clauza LOGGING din CREATE TABLESPACE are prioritate fata de un NOLOGGING de la crearea unei tabele in acel tablespace."
-			},
-			{
-				"str": "Daca exista o diferenta LOGGING – NOLOGGING intre tabela si tablespace automat se considera LOGGING"
-			},
-			{
-				"str": "Clauza LOGGING din CREATE TABLE are prioritate fata de un NOLOGGING al tablespace-ului in care se pune tabela.",
-				"isCorrect": true
-			}
-		]
-	},
-
-	{
-		"quest": "In cazul cererii CREATE TABLE, suma dintre PCTFREE si PCTUSED trebuie sa fie",
-		"choices": [
-			{ "str": "Intre 1 si 198" },
-			{ "str": "Intre 1 si 100", "isCorrect": true },
-			{ "str": "Intre 1 si 99" }
-		]
-	},
-
-	{
-		"quest": "In cazul unui user identificat prin parola, care dintre parolele de mai jos este gresita:",
-		"choices": [
-			{ "str": "A12345678901234567891234567890" },
-			{ "str": "PA_$#ROLA$#_USER12345678901234" },
-			{ "str": "PAROLA_USER_1_1234%67890123", "isCorrect": true }
-		]
-	},
-	{
-		"quest": "In cazul tabelelor de tip cluster (clustered taables):",
-		"choices": [
-			{ "str": "Inregistrarile sunt organizate ca arbore B" },
-			{
-				"str": "Acestea sunt parte a unui grup de tabele avand in comun anumite coloane",
-				"isCorrect": true
-			},
-			{ "str": "Liniile sunt impartite in mai multe grupuri" }
-		]
-	},
-	{
-		"quest": "Algoritmii de clustering sunt de tipul:",
-		"choices": [
-			{ "str": "Prescriptiv" },
-			{ "str": "Predictiv" },
-			{ "str": "Descriptiv", "isCorrect": true }
-		]
-	},
-
-	{
-		"quest": "Valoarea curenta (FALSE) a lui RESOURCE_LIMIT se poate modifica prin:",
-		"choices": [
-			{ "str": "ALTER SESSION SET RESOURCE_LIMIT=TRUE" },
-			{ "str": "ALTER USER SET RESOURCE_LIMIT=TRUE" },
-			{ "str": "ALTER SYSTEM SET RESOURCE_LIMIT=TRUE", "isCorrect": true }
-		]
-	},
-	{
 		"quest": "Putem vedea daca o modul curent de lucru este RESTRICTED consultand:",
 		"choices": [
 			{ "str": "V$CONTROLFILE" },
 			{ "str": "V$INSTANCE", "isCorrect": true },
 			{ "str": "V$SESSION" }
-		]
-	},
-	{
-		"quest": "Pentru recunoașterea punctelor izolate (outliers) se folosește valoarea 1,5 * IQR. In acest caz, cât ar trebui sa fie X din mulțimea {0, 1, 2, X} pentru a fi considerat punct izolat:",
-		"choices": [
-			{ "str": "-2.5" },
-			{ "str": "5.5", "isCorrect": true },
-			{ "str": "-1,5" }
-		]
-	},
-	{
-		"quest": "Cand cota unui user intr-un tablespace e trecuta pe o valoare mai mica decat spatiul ocupat:",
-		"choices": [
-			{ "str": "Nu se mai pot crea obiecte noi dar cele existente pot creste" },
-			{
-				"str": "Nu se mai pot crea obiecte noi iar cele existente nu pot creste",
-				"isCorrect": true
-			},
-			{
-				"str": "Se pot crea obiecte noi dar cele existente nu mai pot creste"
-			}
-		]
-	},
-	{
-		"quest": "Numarul minim de fisiere de tip Fisier de Redo Log este:",
-		"choices": [
-			{ "str": "Unul" },
-			{ "str": "Nu exista o valoare minima" },
-			{ "str": "Doua", "isCorrect": true }
 		]
 	},
 	{
@@ -240,14 +90,6 @@
 		]
 	},
 	{
-		"quest": "Numarul minim de fisiere de tip Fisier de Control este:",
-		"choices": [
-			{ "str": "Unul", "isCorrect": true },
-			{ "str": "Doua" },
-			{ "str": "Nu exista o valoare minima" }
-		]
-	},
-	{
 		"quest": "Membrii unui grup de fisiere redo log sunt scrisi",
 		"choices": [
 			{ "str": "In serie (unul dupa altul)" },
@@ -259,7 +101,7 @@
 		"choices": [
 			{ "str": "Tranzactia curenta este anulata" },
 			{ "str": "Doar operatia curenta este anulata", "isCorrect": true },
-			{ "str": "Doar operatia curenta este anulata" }
+			{ "str": "Userul e deconectat " }
 		]
 	},
 	{
@@ -268,14 +110,6 @@
 			{ "str": "Imediat si Abort" },
 			{ "str": "Tranzactional, Imediat si Abort" },
 			{ "str": "Abort", "isCorrect": true }
-		]
-	},
-	{
-		"quest": "Valoarea implicita pentru INITRANS in cazul tabelelor este:",
-		"choices": [
-			{ "str": "1", "isCorrect": true },
-			{ "str": "2" },
-			{ "str": "255" }
 		]
 	},
 	{
@@ -796,16 +630,8 @@
 		"quest": "O baza de date contine un numar de tablespace:",
 		"choices": [
 			{ "str": "=1" },
-			{ "str": "&lt;=1" },
-			{ "str": "&gt;=1", "isCorrect": true }
-		]
-	},
-	{
-		"quest": "Un tablespace poae fi de unul din tipurile:",
-		"choices": [
-			{ "str": "Permanent, Temporar, Offline" },
-			{ "str": "Permanent, Temporar, Undo", "isCorrect": true },
-			{ "str": "Permanent, Online, Offline" }
+			{ "str": "<=1" },
+			{ "str": ">=1", "isCorrect": true }
 		]
 	},
 	{
@@ -1110,14 +936,6 @@
 			{ "str": "Penru useri sau pentru sistem" },
 			{ "str": "Temporare sau permanente" },
 			{ "str": "Obiect sau sistem", "isCorrect": true }
-		]
-	},
-	{
-		"quest": "Daca este atinsa o limita a profilului la nivel de operatie (call) atunci:",
-		"choices": [
-			{ "str": "Tranzactia curenta este anulata" },
-			{ "str": "Doar operatia curenta este anulata", "isCorrect": true },
-			{ "str": "Userul este deconectat" }
 		]
 	},
 	{
