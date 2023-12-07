@@ -96,7 +96,7 @@ function App() {
 
 	return (
 		<div style={{ width: "100vw", display: "" }}>
-			<div className='container w-[20px]'>
+			<div className='container'>
 				<div className='default-questions-container'>
 					<h2>Choose from default questions</h2>
 					{defaultFiles.map((defaultFile) => (
@@ -115,6 +115,7 @@ function App() {
 						flexDirection: "row",
 						alignItems: "center",
 						gap: "1rem",
+						maxWidth: "100%",
 					}}
 				>
 					<button

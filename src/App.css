@@ -12,8 +12,10 @@
 	flex-direction: column;
 	padding: 10px;
 	font-size: 1rem;
-	max-width: 1280px;
-	margin: 0 auto;
+	/* max-width: 1280px; */
+	/* margin: 0 auto; */
+	margin-left: 25vw;
+	max-width: 70vw;
 }
 
 .question {
@@ -41,6 +43,7 @@
 	margin-top: 10px;
 	background-color: rgb(5, 97, 128);
 	color: white;
+	max-width: 100%;
 }
 
 .search-bar input::placeholder {
@@ -58,7 +61,7 @@
 	top: 0;
 	left: 0;
 	background-color: white;
-	width: 15%;
-	max-width: 25%;
+	/* width: 15%; */
+	max-width: 25vw;
 	padding: 8px;
 }
