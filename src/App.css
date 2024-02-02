@@ -14,8 +14,15 @@
 	font-size: 1rem;
 	/* max-width: 1280px; */
 	/* margin: 0 auto; */
-	margin-left: 25vw;
-	max-width: 70vw;
+	max-width: 1280px;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.selection-container {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem 0;
 }
 
 .question {
@@ -46,22 +53,23 @@
 	max-width: 100%;
 }
 
+.question-container {
+	padding: 0 1rem;
+}
+
 .search-bar input::placeholder {
 	color: #d2d2d2;
 }
 
 .default-question-item {
-	max-width: 100%;
 	padding: 8px;
 	border: 1px solid #d2d2d2;
+	width: fit-content;
 }
 
 .default-questions-container {
-	position: absolute;
-	top: 0;
-	left: 0;
 	background-color: white;
-	/* width: 15%; */
+	flex: 1;
 	max-width: 25vw;
 	padding: 8px;
 }

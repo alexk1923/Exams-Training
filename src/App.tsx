@@ -109,6 +109,19 @@ function App() {
 					))}
 				</div>
 
+				<div className='selection-container'>
+					<label htmlFor='avatar'>
+						Choose a JSON file containig questions:
+					</label>
+					<input
+						type='file'
+						id='avatar'
+						name='avatar'
+						accept='application/JSON'
+						onChange={handleUploadFile}
+					/>
+				</div>
+
 				<div
 					style={{
 						display: "flex",
@@ -125,16 +138,6 @@ function App() {
 					>
 						Reset all
 					</button>
-					<label htmlFor='avatar'>
-						Choose a JSON file containig questions:
-					</label>
-					<input
-						type='file'
-						id='avatar'
-						name='avatar'
-						accept='application/JSON'
-						onChange={handleUploadFile}
-					/>
 				</div>
 
 				<div style={{ display: "flex", flexWrap: "wrap" }}>
@@ -176,7 +179,7 @@ function App() {
 									.includes(searchQuestion.toLowerCase())
 							)
 							.map((question) => (
-								<div className=''>
+								<div className='question'>
 									<Question
 										question={question}
 										key={question.id}
