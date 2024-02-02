@@ -1,0 +1,2510 @@
+[
+	{
+		"quest": "Putem vedea daca o modul curent de lucru este RESTRICTED consultand:",
+		"choices": [
+			{ "str": "V$CONTROLFILE" },
+			{ "str": "V$INSTANCE", "isCorrect": true },
+			{ "str": "V$SESSION" }
+		]
+	},
+	{
+		"quest": "La inchiderea bazei de date blocurile de date modificate din memorie sunt scrise pe disc de:",
+		"choices": [
+			{ "str": "Procesul Checkpoint (CKPT)" },
+			{ "str": "Procesul Database Writer (DBWn)", "isCorrect": true },
+			{ "str": "Procesul Checkpoint (CKPT)" }
+		]
+	},
+	{
+		"quest": "Parametrul LOG_CHECKPOINT_TIMEOUT se masoara in :",
+		"choices": [
+			{ "str": "Minute" },
+			{ "str": "Secunde", "isCorrect": true },
+			{ "str": "Blocuri" }
+		]
+	},
+	{
+		"quest": "Fisierele de control sunt scrise :",
+		"choices": [
+			{ "str": "In paralel (multiplexat)", "isCorrect": true },
+			{ "str": "In serie (unul dupa altul)" }
+		]
+	},
+	{
+		"quest": "Numarul de blocuri de date din Database Buffer Cache este dat de:",
+		"choices": [
+			{ "str": "LOG_BUFFER" },
+			{ "str": "DB_BLOCK_BUFFERS", "isCorrect": true },
+			{ "str": "DB_BLOCK_SIZE" }
+		]
+	},
+	{
+		"quest": "Vederile dinamice pentru performante se pot consulta:",
+		"choices": [
+			{ "str": "Unele dintre ele dupa pornirea instantei", "isCorrect": true },
+			{ "str": "Doar dupa montarea BD" },
+			{ "str": "Doar dupa deschiderea BD" }
+		]
+	},
+	{
+		"quest": "Procesul Log Writer scrie pe disc :",
+		"choices": [
+			{ "str": "In acelasi timp cu DBWRITER" },
+			{ "str": "Inainte ca DBWRITER sa scrie pe disc", "isCorrect": true },
+			{ "str": "Dupa ce DBWRITER scrie pe disc" }
+		]
+	},
+	{
+		"quest": "Algoritmii de clasificare sunt de tipul:",
+		"choices": [
+			{ "str": "Descriptiv" },
+			{ "str": "Predictiv", "isCorrect": true },
+			{ "str": "Prescriptiv" }
+		]
+	},
+	{
+		"quest": "Crearea unei baze de date se face :",
+		"choices": [
+			{ "str": "Cu instanta pornita", "isCorrect": true },
+			{ "str": "Cu baza de date montata" },
+			{ "str": "Cu procesele de background oprite" }
+		]
+	},
+	{
+		"quest": "Procesul Archiver (ARCn):",
+		"choices": [
+			{
+				"str": "Copiaza fisierele Redo Log in arhiva de pe disc",
+				"isCorrect": true
+			},
+			{ "str": "Scrie periodic pe disc blocurile de date modificate" },
+			{ "str": "Citeste blocurile de date de modificat in memorie" }
+		]
+	},
+	{
+		"quest": "Fortarea unui log switch se face cu comanda:",
+		"choices": [
+			{ "str": "ALTER SYSTEM SWITCH LOGFILE", "isCorrect": true },
+			{ "str": "ALTER DATABASE SWITCH LOGFILE" },
+			{ "str": "ALTER SESSION SWITCH LOGFILE" }
+		]
+	},
+	{
+		"quest": "Membrii unui grup de fisiere redo log sunt scrisi",
+		"choices": [
+			{ "str": "In serie (unul dupa altul)" },
+			{ "str": "In paralel (multiplexat)", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Daca este atinsa o limita a profilului la nivel de operatie (call) atunci :",
+		"choices": [
+			{ "str": "Tranzactia curenta este anulata" },
+			{ "str": "Doar operatia curenta este anulata", "isCorrect": true },
+			{ "str": "Userul e deconectat " }
+		]
+	},
+	{
+		"quest": "In cazul carei opriri nu sunt inchise fisierele:",
+		"choices": [
+			{ "str": "Imediat si Abort" },
+			{ "str": "Tranzactional, Imediat si Abort" },
+			{ "str": "Abort", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Lista cu fisierele de control se poate obtine cu comanda:",
+		"choices": [
+			{
+				"str": "SELECT VALUE FROM V$PARAMETER WHERE NAME = 'control_files';",
+				"isCorrect": true
+			},
+			{ "str": "SELECT MEMBER FROM V$LOGFILE;" },
+			{ "str": "SELECT NAME FROM V$DATAFILE;" }
+		]
+	},
+	{
+		"quest": "Numarul minim de fisiere de tip Fisier de Control este:",
+		"choices": [
+			{ "str": "Unul", "isCorrect": true },
+			{ "str": "Doua" },
+			{ "str": "Nu exista o valoare minima" }
+		]
+	},
+
+	{
+		"quest": "Un user poate avea in acelasi timp:",
+		"choices": [
+			{
+				"str": "Mai multe sesiuni deschisa cu acelasi server Oracle",
+				"isCorrect": true
+			},
+			{ "str": "O singura sesiune deschisa cu acelasi server Oracle" },
+			{
+				"str": "Mai multe sesiuni deschisa cu acelasi server Oracle doar in varianta Multithreaded Server"
+			}
+		]
+	},
+	{
+		"quest": "Numarul minim de fisiere de tip Fisier de Redo Log este:",
+		"choices": [
+			{ "str": "Unul" },
+			{ "str": "Doua", "isCorrect": true },
+			{ "str": "Nu exista o valoare minima" }
+		]
+	},
+	{
+		"quest": "In cursul nostru SCN inseamna:",
+		"choices": [
+			{ "str": "Serial Change Number" },
+			{ "str": "System Change Number", "isCorrect": true },
+			{ "str": "System Core Number" }
+		]
+	},
+	{
+		"quest": "Log Writer (LGWR) este un proces:",
+		"choices": [
+			{ "str": "slave" },
+			{ "str": "server" },
+			{ "str": "de background", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Un server Oracle este compus din:",
+		"choices": [
+			{ "str": "O zona de memorie numita PGA si procese server" },
+			{ "str": "O instanta Oracle si o baza de date", "isCorrect": true },
+			{ "str": "O zona de memorie numita SGA si procese de background" }
+		]
+	},
+	{
+		"quest": "Dimensiunea zonei de memorie Redo Log Buffer e data de:",
+		"choices": [
+			{ "str": "DB_BLOCK_BUFFERS" },
+			{ "str": "DB_BLOCK_SIZE" },
+			{ "str": "LOG_BUFFER", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Procesul Checkpoint (CKPT):",
+		"choices": [
+			{
+				"str": "Scrie periodic pe disc blocurile de date modificate",
+				"isCorrect": true
+			},
+			{ "str": "Scrie periodic pe disc inregistrarile Redo Log modificate" },
+			{ "str": "Citeste blocurile de date de modificat in memorie" }
+		]
+	},
+	{
+		"quest": "Numarul minim de fisiere de tip Fisier de Date este:",
+		"choices": [
+			{ "str": "Unul", "isCorrect": true },
+			{ "str": "Doua" },
+			{ "str": "Nu exista o valoare minima" }
+		]
+	},
+	{
+		"quest": "Fisierele de date contin printre altele:",
+		"choices": [
+			{ "str": "Obiectele userului si inregistrarile de tip Redo Log" },
+			{ "str": "Dictionarul de date si obiectele userului", "isCorrect": true },
+			{ "str": "Inregistrarile de tip Redo Log si blocuri de tip Rollback" }
+		]
+	},
+	{
+		"quest": "Dimensiunea blocului de date din Database Buffer Cache este dat de:",
+		"choices": [
+			{ "str": "DB_BLOCK_SIZE", "isCorrect": true },
+			{ "str": "DB_BLOCK_BUFFERS" },
+			{ "str": "LOG_BUFFER" }
+		]
+	},
+	{
+		"quest": "Procesul System Monitor (SMON):",
+		"choices": [
+			{ "str": "Scrie periodic pe disc inregistrarile Redo Log modificate" },
+			{
+				"str": "Este folosit pentru recuperarea dupa incident",
+				"isCorrect": true
+			},
+			{ "str": "Scrie periodic pe disc blocurile de date modificate" }
+		]
+	},
+	{
+		"quest": "Un proces server lucreaza impreuna cu:",
+		"choices": [
+			{ "str": "Doar cu procesul user" },
+			{ "str": "Si cu procesul user si cu serverul Oracle", "isCorrect": true },
+			{ "str": "Doar cu serverul Oracle" }
+		]
+	},
+	{
+		"quest": "Database Writer (DBWn) este un proces:",
+		"choices": [
+			{ "str": "server" },
+			{ "str": "slave" },
+			{ "str": "de background", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Cand o tranzactie este comisa (COMMIT) se scriu pe disc",
+		"choices": [
+			{ "str": "Blocurile de date modificate" },
+			{ "str": "Inregistrari din Redo Log", "isCorrect": true },
+			{ "str": "Inregistrari din Instant Memory" }
+		]
+	},
+	{
+		"quest": "Un user Oracle interactioneaza direct cu:",
+		"choices": [
+			{ "str": "Serverul Oracle" },
+			{ "str": "Un proces server" },
+			{ "str": "Un proces user", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Un proces server are la dispozitie o zona de memorie exclusiva numita:",
+		"choices": [
+			{ "str": "SGA" },
+			{ "str": "Shared Pool" },
+			{ "str": "PGA", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "O instanta Oracle este compusa din:",
+		"choices": [
+			{ "str": "O zona de memorie numita SGA si procese slave" },
+			{
+				"str": "O zona de memorie numita SGA si procese de background",
+				"isCorrect": true
+			},
+			{ "str": "O zona de memorie numita PGA si procese server" }
+		]
+	},
+	{
+		"quest": "In cazul carei opriri nu se executa ROLLBACK pentru tranzactiile active",
+		"choices": [
+			{
+				"str": "ROLLBACK se executa pentru toate tipurile de opriri",
+				"isCorrect": true
+			},
+			{ "str": "Imediat si Abort" },
+			{ "str": "Abort" }
+		]
+	},
+	{
+		"quest": "Exista vederi dinamice care pot fi consultate cu instanta oprita?",
+		"choices": [{ "str": "Nu", "isCorrect": true }, { "str": "Da" }]
+	},
+	{
+		"quest": "Recuperarea dupa incident este necesara cand oprirea s-a facut in modul:",
+		"choices": [
+			{ "str": "Abort", "isCorrect": true },
+			{ "str": "Imediat si Abort" },
+			{ "str": "Tranzactional, Imediat si Abort" }
+		]
+	},
+	{
+		"quest": "Userul SYSEM este:",
+		"choices": [
+			{ "str": "SYSTEM este un privilegiu si nu un user" },
+			{
+				"str": "Proprietarul tabelelor din dictionarul bazei de date"
+			},
+			{
+				"str": "Proprietarul altor tabele decat cele din dictionarul de date",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "In cazul lansarii unei operatii de oprire a bazei de date, sunt permise noi conexiuni in cazul opririi:",
+		"choices": [
+			{ "str": "Nu se mai permit noi conexiuni", "isCorrect": true },
+			{ "str": "Normale" },
+			{ "str": "Tranzactionale" }
+		]
+	},
+	{
+		"quest": "Crearea unei baze de date se face:",
+		"choices": [
+			{ "str": "Cu instanta pornita", "isCorrect": true },
+			{ "str": "Cu baza de date montata" },
+			{ "str": "Cu procesele de background oprite" }
+		]
+	},
+	{
+		"quest": "Poti crea o baza de date daca esti :",
+		"choices": [
+			{ "str": "SYSDBA sau SYSOPER" },
+			{ "str": "DBA" },
+			{ "str": "SYSDBA", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "La executia comenzii ALTER SYSTEM ENABLE RESTRICTED SESSION sesiunile deja existente:",
+		"choices": [
+			{ "str": "Raman active pana la terminarea lor", "isCorrect": true },
+			{ "str": "Sunt oprite" }
+		]
+	},
+	{
+		"quest": "Care este afirmatia corecta :",
+		"choices": [
+			{ "str": "DBA=rol, SYSDBA=privilegiu", "isCorrect": true },
+			{ "str": "DBA=privilegiu, SYSDBA=rol" },
+			{ "str": "Ambele sunt privilegii" }
+		]
+	},
+	{
+		"quest": "Deschiderea fisierelor de date se face la momentul :",
+		"choices": [
+			{ "str": "Deschiderii BD", "isCorrect": true },
+			{ "str": "Montarii BD" },
+			{ "str": "Pornirii instantei" }
+		]
+	},
+	{
+		"quest": "Care operatie nu poate fi efectuata cu SYSOPER doar:",
+		"choices": [
+			{ "str": "CREATE SPFILE" },
+			{ "str": "CREATE DATABASE", "isCorrect": true },
+			{ "str": "ALTER DATABASE ARCHIVELOG" }
+		]
+	},
+	{
+		"quest": "Montarea bazei de date se face:",
+		"choices": [
+			{ "str": "Dupa pornirea instantei", "isCorrect": true },
+			{ "str": "La montare se face implicit si pornirea instantei" },
+			{ "str": "Inainte de pornirea instantei" }
+		]
+	},
+	{
+		"quest": "Userul SYS este:",
+		"choices": [
+			{ "str": "SYS este un rol si nu un user" },
+			{ "str": "Proprietarul altor tabele decat cele din dictionarul de date" },
+			{
+				"str": "Proprietarul tabelelor din dictionarul bazei de date",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "DBA contine:",
+		"choices": [
+			{ "str": "SYSDBA dar nu SYSOPER" },
+			{ "str": "SYSDBA si SYSOPER", "isCorrect": true },
+			{ "str": "SYSOPER dar nu SYSDBA" }
+		]
+	},
+	{
+		"quest": "Redenumirea fisierelor de date in care se stocheaza baza de date se poate face:",
+		"choices": [
+			{ "str": "Cu instanta pornita" },
+			{ "str": "Cu baza de date montata", "isCorrect": true },
+			{ "str": "Cu baza de date deschisa" }
+		]
+	},
+	{
+		"quest": "Rolul Oracle DBA nu contine:",
+		"choices": [
+			{ "str": "SYSOPER, dar contine SYSDBA" },
+			{ "str": "Nici SYSDBA si nici SYSOPER", "isCorrect": true },
+			{ "str": "SYSDBA, dar contine SYSOPER" }
+		]
+	},
+	{
+		"quest": "In cazul carei opriri se executa ROLLBACK pentru tranzactiile active:",
+		"choices": [
+			{ "str": "Abort" },
+			{
+				"str": "ROLLBACK se executa pentru toate tipurile de opriri",
+				"isCorrect": true
+			},
+			{ "str": "Imediat si Abort" }
+		]
+	},
+	{
+		"quest": "Redenumirea aunui fisier de Redo Log presupune si executia cererii:",
+		"choices": [
+			{ "str": "ALTER DATABASE RENAME FILE", "isCorrect": true },
+			{ "str": "ALTER SYSTEM RENAME REDOLOG FILE" },
+			{ "str": "ALTER DATABASE RENAME REDOLOG FILE" }
+		]
+	},
+	{
+		"quest": "Adaugarea de noi membri intr-un grup de Redo Log se face cu comanda:",
+		"choices": [
+			{ "str": "ALTER SESSION ADD LOGFILE MEMBER" },
+			{ "str": "ALTER DATABASE ADD LOGFILE MEMBER", "isCorrect": true },
+			{ "str": "ALTER SYSTEM ADD LOGFILE MEMBER" }
+		]
+	},
+	{
+		"quest": "Lista cu fisierele de date se poate obtine cu comanda:",
+		"choices": [
+			{ "str": "SELECT MEMBER FROM V$LOGFILE;" },
+			{
+				"str": "SELECT VALUE FROM V$PARAMETER WHERE NAME = 'control_files';"
+			},
+			{ "str": "SELECT NAME FROM V$DATAFILE;", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Fisierele de control sunt de tipul :",
+		"choices": [
+			{ "str": "Binar", "isCorrect": true },
+			{ "str": "Text" },
+			{ "str": "XML" }
+		]
+	},
+	{
+		"quest": "Dimensiunea membrilor unui grup de fisiere redo log:",
+		"choices": [
+			{ "str": "Poate fi diferita" },
+			{ "str": "Trebuie sa fie aceeasi", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Crearea unei salvari pentru fisierele de control se face cu comanda:",
+		"choices": [
+			{ "str": "ALTER SYSTEM BACKUP CONTROLFILE" },
+			{ "str": "ALTER DATABASE BACKUP CONTROLFILE", "isCorrect": true },
+			{ "str": "ALTER SESSION BACKUP CONTROLFILE" }
+		]
+	},
+	{
+		"quest": "Parametrul LOG_CHECKPOINT_INTERVAL se masoara in",
+		"choices": [
+			{ "str": "Secunde" },
+			{ "str": "Minute" },
+			{ "str": "Blocuri", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Stergerea unui fisier de control se face:",
+		"choices": [
+			{ "str": "Cu baza de date deschisa" },
+			{ "str": "Cu baza de date doar montata" },
+			{ "str": "Cu instanta oprita.", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Fortarea unui checkpoint se face cu comanda:",
+		"choices": [
+			{ "str": "ALTER SYSTEM CHECKPOINT", "isCorrect": true },
+			{ "str": "ALTER SESSION CHECKPOINT" },
+			{ "str": "ALTER DATABASE CHECKPOINT" }
+		]
+	},
+	{
+		"quest": "Procesul Log Writer scrie pe disc:",
+		"choices": [
+			{ "str": "Dupa ce DBWRITER scrie pe disc" },
+			{ "str": "Inaine ca DBWRITER sa scrie pe disc", "isCorrect": true },
+			{ "str": "In acelasi timp cu DBWRITER" }
+		]
+	},
+	{
+		"quest": "Lista cu fisierele de redo log se poate obtine cu comanda:",
+		"choices": [
+			{ "str": "SELECT NAME FROM V$DATAFILE;" },
+			{ "str": "SELECT MEMBER FROM V$LOGFILE;", "isCorrect": true },
+			{ "str": "SELECT VALUE FROM V$PARAMETER WHERE NAME = ‘control_files’;" }
+		]
+	},
+	{
+		"quest": "Membrii unui grup de fisiere redo log sunt scrisi:",
+		"choices": [
+			{ "str": "In paralel (muliplexat)", "isCorrect": true },
+			{ "str": "In serie (unul dupa altul)" }
+		]
+	},
+	{
+		"quest": "Care afirmatie este corecta :",
+		"choices": [
+			{
+				"str": "Cand apare un log-switch se face si un checkpoint",
+				"isCorrect": true
+			},
+			{ "str": "Checkpoint si log-switch nu sunt corelate" },
+			{ "str": "Cand apare un checkpoint se face si un log-switch" }
+		]
+	},
+	{
+		"quest": "Redenumirea unui fisier de Redo Log presupune si executia cererii:",
+		"choices": [
+			{ "str": "ALTER DATABASE RENAME FILE", "isCorrect": true },
+			{ "str": "ALTER SYSTEM RENAME REDOLOG FILE" },
+			{ "str": "ALTER DATABASE RENAME REDOLOG FILE" }
+		]
+	},
+	{
+		"quest": "Fisierele de redo-log sunt scrise de:",
+		"choices": [
+			{ "str": "Procesul server" },
+			{ "str": "Procesul client" },
+			{ "str": "Un proces de background", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Care element este o succesiune contigua de blocuri?",
+		"choices": [
+			{ "str": "Segment" },
+			{ "str": "Extensie", "isCorrect": true },
+			{ "str": "Tablespace" }
+		]
+	},
+	{
+		"quest": "Un fisier de date poate sa apartina",
+		"choices": [
+			{ "str": "Unui singur tablespace", "isCorrect": true },
+			{ "str": "La doua tablespace-uri diferite" },
+			{ "str": "Unui singur segment" }
+		]
+	},
+	{
+		"quest": "Un tablespace poate deveni OFFLINE:",
+		"choices": [
+			{ "str": "Atat la creare cat si dupa aceea", "isCorrect": true },
+			{ "str": "Doar la creare" },
+			{ "str": "Doar dupa ce a fost creat ONLINE" }
+		]
+	},
+	{
+		"quest": "DMT inseamna:",
+		"choices": [
+			{ "str": "Dictionary merged tablespace" },
+			{ "str": "Data managed tablespace" },
+			{ "str": "Dictionary managed tablespace", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Clauza AUTOEXTEND permite cresterea dimensiunii :",
+		"choices": [
+			{
+				"str": "Segmentelor"
+			},
+			{ "str": "Fisierelor de date", "isCorrect": true },
+			{ "str": "Extensiilor" }
+		]
+	},
+	{
+		"quest": "Clauza DEFAULT STORAGE are efect in dimensionarea:",
+		"choices": [
+			{ "str": "Extensiilor", "isCorrect": true },
+			{ "str": "Tablespace-urilor" },
+			{ "str": "Segmentelor" }
+		]
+	},
+	{
+		"quest": "Un nou fisier de date se poate adauga folosind comanda:",
+		"choices": [
+			{
+				"str": "ALTER SEGMENT ..."
+			},
+			{ "str": "ALTER TABLESPACE ...", "isCorrect": true },
+			{ "str": "ALTER EXTENT ..." }
+		]
+	},
+	{
+		"quest": "La trecerea unui tablespace OFFLINE se pot folosi parametrii:",
+		"choices": [
+			{ "str": "NORMAL si FLASHBACK" },
+			{ "str": "TEMPORARY si UNIFORM" },
+			{ "str": "NORMAL si IMMEDIATE", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Segmentele temporare se pot stoca :",
+		"choices": [
+			{ "str": "Doar in tablespace-uri temporare" },
+			{ "str": "In orice tablespace", "isCorrect": true },
+			{ "str": "In orice tablespace cu exceptia celui SYSTEM" }
+		]
+	},
+	{
+		"quest": "O baza de date contine un numar de tablespace:",
+		"choices": [
+			{ "str": "=1" },
+			{ "str": "<=1" },
+			{ "str": ">=1", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "In functie de gestiunea extensiilor, un tablespace poate fi de tipul:",
+		"choices": [
+			{ "str": "DMT sau FMT" },
+			{ "str": "LMT sau SMT" },
+			{ "str": "LMT sau DMT", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Care afirmatie este corecta:",
+		"choices": [
+			{ "str": "Exista un segment numit SYSAUX" },
+			{ "str": "Exista o extensie numita SYSAUX" },
+			{ "str": "Exista un tablespace numit SYSAUX", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Un tablespace poate deveni READ ONLY:",
+		"choices": [
+			{ "str": "Doar dupa ce a fost creat READ-WRITE", "isCorrect": true },
+			{ "str": "Atat la creare cat si dupa aceea" },
+			{ "str": "Doar la creare" }
+		]
+	},
+	{
+		"quest": "Dictionarul de date al sistemului se memoreaza in:",
+		"choices": [
+			{ "str": "Intr-un tablespace specificat la instalare" },
+			{ "str": "Tablespace-ul DBA" },
+			{ "str": "Tablespace-ul SYSTEM", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "LMT inseamna:",
+		"choices": [
+			{ "str": "Locally Managed tablespace", "isCorrect": true },
+			{ "str": "Link managed tablespace" },
+			{ "str": "Lower management for tablespaces" }
+		]
+	},
+	{
+		"quest": "Un obiect (tabela, index, etc) are ca si corespondent:",
+		"choices": [
+			{ "str": "Un tablespace" },
+			{ "str": "Un segment", "isCorrect": true },
+			{ "str": "O extensie" }
+		]
+	},
+	{
+		"quest": "Care afirmatie este corecta:",
+		"choices": [
+			{ "str": "Exista un tablespace numit SYSTEM", "isCorrect": true },
+			{ "str": "Exista o extensie numita SYSTEM" },
+			{ "str": "Exista un segment numit SYSTEM" }
+		]
+	},
+	{
+		"quest": "Un tablespace poate fi de unul din tipurile:",
+		"choices": [
+			{
+				"str": "Permanent, Online, Offline"
+			},
+			{ "str": "Permanent, Temporar, Offline" },
+			{ "str": "Permanent, Temporar, Undo", "isCorrect": true }
+		]
+	},
+
+	{
+		"quest": "Care afirmatie este adevarata:",
+		"choices": [
+			{
+				"str": "Clauza NOLOGGING din CREATE TABLE are prioritate fata de un FORCE LOGGING al tablespace-ului in care se pune tabela."
+			},
+			{
+				"str": "Clauza FORCE LOGGING din CREATE TABLESPACE are prioritate fata de un NOLOGGING de la crearea unei tabele in acel tablespace.",
+				"isCorrect": true
+			},
+			{
+				"str": "Daca exista o diferenta LOGGING – NOLOGGING intre tabela si tablespace automat se considera LOGGING"
+			}
+		]
+	},
+	{
+		"quest": "HWM poate fi mutat in jos:",
+		"choices": [
+			{ "str": "Celelalte doua raspunsuri sunt incorecte" },
+			{ "str": "Ca efect al unor comenzi DML" },
+			{ "str": "Ca efect al unor comenzi DDL", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Daca o tabela a fost creata cu optiunea NOPARALLEL atunci:",
+		"choices": [
+			{
+				"str": "Tabela poate fi parcursa in paralel folosind comentarii de tip 'hint'",
+				"isCorrect": true
+			},
+			{ "str": "Tabela nu poate fi parcursa in paralel" },
+			{
+				"str": "Tabela poate fi parcursa in paralel folosind clauza PARALLEL a unei cereri SELECT"
+			}
+		]
+	},
+	{
+		"quest": "In cazul tabeleor organizate ca index (index organized), acestea se pot partitiona?",
+		"choices": [
+			{
+				"str": "Da, daca atributele dupa care se face partitionarea nu sunt o submultime a cheii primare."
+			},
+			{ "str": "Nu" },
+			{
+				"str": "Da, daca atributele dupa care se face partitionarea sunt o submultime a cheii primare.",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Valoarea implicita pentru INITRANS in cazul tabelelor este:",
+		"choices": [
+			{ "str": "2" },
+			{ "str": "1", "isCorrect": true },
+			{ "str": "255" }
+		]
+	},
+	{
+		"quest": "In cazul tabelelor partitionate:",
+		"choices": [
+			{
+				"str": "Liniile sunt impartite in mai multe grupuri",
+				"isCorrect": true
+			},
+			{ "str": "Acestea sunt parte a unui cluster" },
+			{ "str": "Inregistrarile sunt organizate ca arbore B" }
+		]
+	},
+	{
+		"quest": "In cazul cererii CREATE TABLE, valoarea lui PCTFREE poate fi:",
+		"choices": [
+			{ "str": "Intre 1 si 99", "isCorrect": true },
+			{ "str": "Intre 1 si 39" },
+			{ "str": "Intre 1 si 9" }
+		]
+	},
+	{
+		"quest": "Daca INITIAL este 10M, NEXT este 20M, PCTINCREASE este 50 atunci extensia 3 va avea:",
+		"choices": [
+			{ "str": "15M" },
+			{ "str": "30M", "isCorrect": true },
+			{ "str": "45M" }
+		]
+	},
+	{
+		"quest": "In cazul cererii CREATE TABLE, suma dintre PCTFREE si PCTUSED trebuie sa fie:",
+		"choices": [
+			{ "str": "Intre 1 si 99" },
+			{ "str": "Intre 1 si 100", "isCorrect": true },
+			{ "str": "Intre 1 si 198" }
+		]
+	},
+	{
+		"quest": "In cazul tabelelor paritionate, partitiile pot sa fie stocate in tablespace-uri diferite?",
+		"choices": [
+			{ "str": "Nu" },
+			{ "str": "Doar daca au acelasi nume" },
+			{ "str": "Da", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Procesul prin care Oracle ia o linie dintr-un bloc si o muta in alt bloc, lasand in locul ei un pointer se numeste:",
+		"choices": [
+			{ "str": "Indexarea pointerilor" },
+			{ "str": "Inlantuirea liniilor (row chaining)" },
+			{ "str": "Migrarea liniilor", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "In cazul tabelelor organizate ca index (index organized):",
+		"choices": [
+			{ "str": "Acestea sunt parte a unui cluster" },
+			{ "str": "Liniile sunt impartite in mai multe grupuri" },
+			{ "str": "Inregistrarile sunt organizate ca arbore B", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "In cazul tabelelor de tip cluster (clustered tables):",
+		"choices": [
+			{ "str": "Inregistrarile sunt organizate ca arbore B" },
+			{ "str": "Liniile sunt impartite in mai multe grupuri" },
+			{
+				"str": "Acestea sunt parte a unui grup de tabele avand in comun anumite coloane",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Procesul prin care o linie este sparta in mai multe bucati care sunt stocate in mai multe blocuri, se numeste:",
+		"choices": [
+			{ "str": "Inlantuirea liniilor (row chaining)", "isCorrect": true },
+			{ "str": "Indexarea pointerilor" },
+			{ "str": "Migrarea liniilor" }
+		]
+	},
+
+	{
+		"quest": "Care afirmatie este adevarata:",
+		"choices": [
+			{
+				"str": "Daca exista o diferenta LOGGING – NOLOGGING intre tabela si tablespace automat se considera LOGGING"
+			},
+			{
+				"str": "Clauza LOGGING din CREATE TABLE are prioritate fata de un NOLOGGING al tablespace-ului in care se pune tabela.",
+				"isCorrect": true
+			},
+			{
+				"str": "Clauza LOGGING din CREATE TABLESPACE are prioritate fata de un NOLOGGING de la crearea unei tabele in acel tablespace."
+			}
+		]
+	},
+	{
+		"quest": "In cazul tabeleleor partitionate, partitile pot sa fie stocate in tablespace-uri diferite?",
+		"choices": [
+			{ "str": "Da", "isCorrect": true },
+			{ "str": "Doar daca au acelasi nume" },
+			{ "str": "Nu" }
+		]
+	},
+	{
+		"quest": "In cazul tabeleor de tip cluster (clustered tables):",
+		"choices": [
+			{
+				"str": "Acestea sunt parte a unui grup de tabele avand in comun anumite coloane",
+				"isCorrect": true
+			},
+			{ "str": "Liniile sunt impartite in mai multe grupuri" },
+			{ "str": "Inregistrarile sunt organizate ca arbore B" }
+		]
+	},
+	{
+		"quest": "Un rol este:",
+		"choices": [
+			{ "str": "O colectie de privilegii", "isCorrect": true },
+			{ "str": "O colectie de profiluri si privilegii" },
+			{ "str": "O colectie de profiluri" }
+		]
+	},
+	{
+		"quest": "In cazul comenzii ALTER USER ... ACCOUNT LOCK:",
+		"choices": [
+			{ "str": "Daca userul era conectat este deconectat." },
+			{ "str": "Celelalte doua variante sunt false" },
+			{ "str": "Sesiunea curenta nu este afectata.", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Se pot asocia cote pentru utilizatori pe tablespace-urile temporare?",
+		"choices": [{ "str": "Da" }, { "str": "Nu", "isCorrect": true }]
+	},
+	{
+		"quest": "In momentul blocarii unui cont (LOCK), daca userul e logat la acel moment:",
+		"choices": [
+			{ "str": "Sesiunea va fi afectata de schimbare" },
+			{ "str": "Sesiunea nu va fi afectata de schimbare", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Valoarea curenta (FALSE) a lui RESOURCE_LIMIT se poate modifica prin:",
+		"choices": [
+			{ "str": "ALTER USER SET RESOURCE_LIMIT=TRUE" },
+			{ "str": "ALTER SYSTEM SET RESOURCE_LIMIT=TRUE", "isCorrect": true },
+			{ "str": "ALTER SESSION SET RESOURCE_LIMIT=TRUE" }
+		]
+	},
+	{
+		"quest": "In cazul unui user identificat prin parola, care dintre parolele de mai jos este corecta:",
+		"choices": [
+			{ "str": "A123456789012345678901234567890" },
+			{ "str": "PA_$#ROLA$#_USER12345678901234", "isCorrect": true },
+			{ "str": "_PAROLA_USER_1" }
+		]
+	},
+	{
+		"quest": "Prin intermediul profilului se pot restrictiona printre altele:",
+		"choices": [
+			{ "str": "Numarul de procese de background per user" },
+			{ "str": "Resurse referitoare la spatiul alocat pe disc" },
+			{ "str": "Resurse referitoare la sistem si la parola", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Prin profiluri se limiteaza printre altele:",
+		"choices": [
+			{ "str": "Drepturile asupra tabelelor" },
+			{ "str": "Memoria folosita pentru acel user", "isCorrect": true },
+			{ "str": "Timpul de acces la disc" }
+		]
+	},
+	{
+		"quest": "Privilegiile sunt de doua tipuri:",
+		"choices": [
+			{ "str": "Penru useri sau pentru sistem" },
+			{ "str": "Temporare sau permanente" },
+			{ "str": "Obiect sau sistem", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Cand cota unui user este modificata la valoarea 0 (aceasta fiind o valoare mai mica decat spatiul ocupat la acel moment de acel user in acel tablespace) atunci in acel tablespace:",
+		"choices": [
+			{ "str": "Nu se mai pot crea noi obiecte", "isCorrect": true },
+			{ "str": "Obiectele existente sunt sterse" },
+			{ "str": "Tabelele existente sunt goale" }
+		]
+	},
+	{
+		"quest": "Privilegiul CREATE TABLE este un:",
+		"choices": [
+			{ "str": "Privilegiu care afecteaza obiectele din orice schema" },
+			{ "str": "Privilegiu sistem", "isCorrect": true },
+			{ "str": "Privilegiu obiect" }
+		]
+	},
+	{
+		"quest": "Prin comanda ALTER PROFILE se poate schimba:",
+		"choices": [
+			{ "str": "Celelalte doua variante sunt false", "isCorrect": true },
+			{ "str": "Cota pe disc a userului unui tablespace" },
+			{ "str": "Numele userului" }
+		]
+	},
+	{
+		"quest": "Cand cota unui user intr-un tablespace e trecuta pe o valoare mai mica decat spatiul ocupat:",
+		"choices": [
+			{ "str": "Nu se mai pot crea obiecte noi dar cele existente pot creste" },
+			{
+				"str": "Nu se mai pot crea obiecte noi iar cele existente nu pot creste",
+				"isCorrect": true
+			},
+			{ "str": "Se pot crea obiecte noi dar cele existente nu mai pot creste" }
+		]
+	},
+	{
+		"quest": "In cazul unui user identificat prin parola, care dintre parolele de mai jos este gresita:",
+		"choices": [
+			{ "str": "A12345678901234567891234567890" },
+			{ "str": "PA_$#ROLA$#_USER12345678901234" },
+			{ "str": "PAROLA_USER_1_1234%67890123", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Daca este atinsa o limita a profilului la nivel de operatie (call) atunci:",
+		"choices": [
+			{ "str": "Userul este deconectat" },
+			{ "str": "Doar operatia curenta este anulata", "isCorrect": true },
+			{ "str": "Tranzactia curenta este anulata" }
+		]
+	},
+	{
+		"quest": "“Binning”: daca avem o cutie (“bin”) conținând valorile 4, 8, 9, 15, prin netezirea folosind capetele intervalului obținem:",
+		"choices": [
+			{ "str": "4, 4, 15, 15" },
+			{ "str": "9, 9, 9, 9" },
+			{ "str": "4, 4, 4, 15", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Sumarul de 5 numere (Five number summary) conține printre altele:",
+		"choices": [
+			{ "str": "Cuartilele și Cvintilele" },
+			{ "str": "Minimul și maximul", "isCorrect": true },
+			{ "str": "Media și mediana" }
+		]
+	},
+	{
+		"quest": "În cazul normalizării Min-Max, mulțimea {1, 2, 3, 6} devine:",
+		"choices": [
+			{ "str": "{0.2, 0.4, 0.6, 0.9}" },
+			{ "str": "{0.1, 0.2, 0.3, 0.6}" },
+			{ "str": "{0.0, 0.2, 0.4, 1}", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Suportul unei reguli de asociere X → Y este dat de formula:",
+		"choices": [
+			{ "str": "Suport (X∪Y) / Suport (X)" },
+			{ "str": "Suport (X∪Y)", "isCorrect": true },
+			{ "str": "Suport (X∩Y)" }
+		]
+	},
+	{
+		"quest": "Varianța (Dispersia) este:",
+		"choices": [
+			{ "str": "Radical din abaterea standard sigma" },
+			{ "str": "Pătratul abaterii standard sigma", "isCorrect": true },
+			{ "str": "Varianța nu este legata de abaterea standard sigma" }
+		]
+	},
+	{
+		"quest": "Discretizarea face parte din etapa de:",
+		"choices": [
+			{ "str": "Vizualizare" },
+			{ "str": "Preprocesarea datelor", "isCorrect": true },
+			{ "str": "Extragerea modelelor și descoperirea cunoștințelor" }
+		]
+	},
+	{
+		"quest": "Algoritmii de clasificare sunt de tipul:",
+		"choices": [
+			{ "str": "Descriptiv" },
+			{ "str": "Prescriptiv" },
+			{ "str": "Predictiv", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "În cazul normalizării de tip Scalare zecimala, mulțimea {1, 2, 3, 6} devine:",
+		"choices": [
+			{ "str": "{0.2, 0.4, 0.6, 0.9}" },
+			{ "str": "{0.0, 0.2, 0.4, 1}" },
+			{ "str": "{0.1, 0.2, 0.3, 0.6}", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "În cazul căutării mulțimilor frecvente în datele de vânzări ale unui supermarket, reducerea dimensionalității (“Dimensionality reduction”)trebuie să păstreze:",
+		"choices": [
+			{ "str": "Prețul" },
+			{ "str": "Produsul", "isCorrect": true },
+			{ "str": "Furnizorul" }
+		]
+	},
+	{
+		"quest": "În cazul unei reguli de asociere X → Y, X si Y sunt:",
+		"choices": [
+			{ "str": "Mulțimi frecvente de articole" },
+			{ "str": "Mulțimi de clase" },
+			{ "str": "Mulțimi de articole", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Încrederea unei reguli de asociere X → Y este dată de formula:",
+		"choices": [
+			{ "str": "Suport (X∪Y)" },
+			{ "str": "Suport (X∩Y)" },
+			{ "str": "Suport (X∪Y) / Suport (X)", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Este Data mining:",
+		"choices": [
+			{ "str": "Căutarea unei persoane într-o bază de date" },
+			{ "str": "Calcularea datelor rezumate (min, max) într-un tabel" },
+			{ "str": "Folosirea unui arbore de decizie", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Algoritmii de clustering sunt de tipul:",
+		"choices": [
+			{ "str": "Predictiv" },
+			{ "str": "Prescriptiv" },
+			{ "str": "Descriptiv", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Ca dată despre o persoana, genul (masculin, feminin) este un atribut de tip:",
+		"choices": [
+			{ "str": "Binar asimetric" },
+			{ "str": "Interval" },
+			{ "str": "Binar simetric", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Gradele militare sunt valori de tip:",
+		"choices": [
+			{ "str": "Ordinal", "isCorrect": true },
+			{ "str": "Nominal" },
+			{ "str": "Interval" }
+		]
+	},
+	{
+		"quest": "În cazul căutării mulțimilor frecvente în datele de vânzări ale unui supermarket, reducerea dimensionalității (“Dimensionality reduction”) trebuie să păstreze:",
+		"choices": [
+			{ "str": "Furnizorul" },
+			{ "str": "Produsul", "isCorrect": true },
+			{ "str": "Prețul" }
+		]
+	},
+	{
+		"quest": "Varianta (Dispersia) mulțimii {0, 1, 2, 3, 4} este:",
+		"choices": [
+			{ "str": "10" },
+			{ "str": "2", "isCorrect": true },
+			{ "str": "Intre 3 si 4" }
+		]
+	},
+	{
+		"quest": "Pentru recunoașterea punctelor izolate (outliers) se folosește valoarea 1,5 * IQR. In acest caz, cât ar trebui sa fie X din mulțimea {0, 1, 2, X} pentru a fi considerat punct izolat:",
+		"choices": [
+			{ "str": "5.5", "isCorrect": true },
+			{ "str": "-2.5" },
+			{ "str": "-1.5" }
+		]
+	},
+	{
+		"quest": "Deviația (abaterea) standard a mulțimii {1, 1, 1, 1, 1} este:",
+		"choices": [
+			{ "str": "1" },
+			{ "str": "0", "isCorrect": true },
+			{ "str": "Intre 1 si 2" }
+		]
+	},
+	{
+		"quest": "Procesul server este:",
+		"choices": [
+			{ "str": "Unul dintre procesele de background" },
+			{
+				"str": "Un proces care deserveste unul sau mai multe procese client",
+				"isCorrect": true
+			},
+			{ "str": "Un proces care apartine SGA" }
+		]
+	},
+	{
+		"quest": "DBWRITER este parte:",
+		"choices": [
+			{ "str": "Procesului client" },
+			{ "str": "Procesului server" },
+			{ "str": "Instantei Oracle", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Buffer cache este parte a:",
+		"choices": [
+			{ "str": "Procesului client" },
+			{ "str": "PGA" },
+			{ "str": "SGA", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Etapele procesarii unei cereri sunt, in ordine:",
+		"choices": [
+			{ "str": "Execute Fetch Parse" },
+			{ "str": "Parse Execute Fetch", "isCorrect": true },
+			{ "str": "Execute Parse Fetch" }
+		]
+	},
+	{
+		"quest": "Ce poate fi stocat in mai mult de un fisier de date:",
+		"choices": [
+			{ "str": "Extensie, Segment si Tablespace" },
+			{ "str": "Segment si Tablespace", "isCorrect": true },
+			{ "str": "Tablespace" }
+		]
+	},
+	{
+		"quest": "Fisierele de control sunt scrise:",
+		"choices": [
+			{ "str": "In paralel (multiplexat)", "isCorrect": true },
+			{ "str": "In serie (unul dupa altul)" },
+			{ "str": "Nici a nici b nu sunt corecte" }
+		]
+	},
+	{
+		"quest": "Membrii unui grup de fisiere redo log sunt scrisi:",
+		"choices": [
+			{ "str": "In paralel (multiplexat)", "isCorrect": true },
+			{ "str": "In serie (unul dupa altul)" },
+			{ "str": "Nici a nici b nu sunt corecte" }
+		]
+	},
+	{
+		"quest": "Fisierele de redo-log sunt scrie de:",
+		"choices": [
+			{ "str": "Procesul server" },
+			{ "str": "Procesul client" },
+			{
+				"str": "Nici a nici b nu sunt corecte, se foloseste procesul LGWR",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Un tablespace poate deveni OFFLINE:",
+		"choices": [
+			{ "str": "Inca de la creare" },
+			{ "str": "Dupa ce a fost creat ONLINE" },
+			{ "str": "a si b sunt adevarate", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "HWM poate fi mutat in sus:",
+		"choices": [
+			{ "str": "Ca efect al unor comenzi DML", "isCorrect": true },
+			{ "str": "Ca efect al unor comenzi DDL" },
+			{ "str": "Nici a nici b nu sunt corecte" }
+		]
+	},
+	{
+		"quest": "Care afirmatie este adevarata:",
+		"choices": [
+			{ "str": "Un fisier apartine unei singure extensii"},
+			{ "str": "Un tablespace e stocat intr-un singur fisier" },
+			{ "str": "a si b sunt false" , "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Care afirmatie este adevarata:",
+		"choices": [
+			{ "str": "Un segment e format din extensii", "isCorrect": true},
+			{ "str": "O extensie e formata din segmente" },
+			{ "str": "a si b sunt false"  }
+		]
+	},
+	{
+		"quest": "Blocurile de date sunt scrise pe disc din memorie de:",
+		"choices": [
+			{ "str": "Procesul DBWR", "isCorrect": true},
+			{ "str": "Procesul user" },
+			{ "str": "Procesul server"  }
+		]
+	},
+	{
+		"quest": "In schema unui user exista printre altele obiecte de tipurile:",
+		"choices": [
+			{ "str": "Tabele, coloane si secvente"},
+			{ "str": "Vederi, sinonime si tablespace-uri" },
+			{ "str": "Indecsi, secvente si tipuri", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Printre tipurile de organizare pentru tabele se numara:",
+		"choices": [
+			{ "str": "Tabele tip hash"},
+			{ "str": "Tabele partitionate", "isCorrect": true },
+			{ "str": "Tabele temporare"}
+		]
+	},
+	{
+		"quest": "In cadrul algoritmului k-means se procedeaza succesiv la:",
+		"choices": [
+			{ "str": "Asocierea punctelor la clustroizi"},
+			{ "str": "Asocierea punctelor la centroizi", "isCorrect": true },
+			{ "str": "Eliminarea punctelor departate"}
+		]
+	},
+	{
+		"quest": "Un proces server se conecteaza intotdeauna cu:",
+		"choices": [
+			{ "str": "Doar un singur proces user"},
+			{ "str": "Unul sau mai multe procese user", "isCorrect": true },
+			{ "str": "a si b sunt false"}
+		]
+	},
+	{
+		"quest": "Care zona de memorie este folosita circular:",
+		"choices": [
+			{ "str": "Library cache"},
+			{ "str": "Redo Log Buffer", "isCorrect": true },
+			{ "str": "Buffer cache"}
+		]
+	},
+	{
+		"quest": "In Oracle SYS este:",
+		"choices": [
+			{ "str": "Un user", "isCorrect": true },
+			{ "str": "Un privilegiu"},
+			{ "str": "Un rol"}
+		]
+	},
+	{
+		"quest": "Alocarea SGA se face la:",
+		"choices": [
+			{ "str": "Deschiderea BD"},
+			{ "str": "Montarea BD"},
+			{ "str": "Pornirea instantei", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Care mod de oprire necesita apoi operatia de recuperare:",
+		"choices": [
+			{ "str": "Abort", "isCorrect": true},
+			{ "str": "Imediat"},
+			{ "str": "Tranzactional" }
+		]
+	},
+	{
+		"quest": "Ca efect al comenzii ALTER SYSTEM KILL SESSION tranzactia curenta:",
+		"choices": [
+			{ "str": "Este anulata", "isCorrect": true},
+			{ "str": "Continua pana la sfarsit"},
+			{ "str": "Continua dar este anulata dupa finalizare" }
+		]
+	},
+	{
+		"quest": "Localizarea si deschiderea fisierelor de control se face la:",
+		"choices": [
+			{ "str": "Montarea BD", "isCorrect": true},
+			{ "str": "Deschiderea BD"},
+			{ "str": "Pornirea instantei" }
+		]
+	},
+	{
+		"quest": "Fisierele de tip Redo Log se folosesc pentru:",
+		"choices": [
+			{ "str": "Salvarea (backup) bazei de date"},
+			{ "str": "Recuperarea dupa incident", "isCorrect": true},
+			{ "str": "Stocarea blocurilor de date" }
+		]
+	},
+	{
+		"quest": "Scrierea inregistrarilor de tip Redo Log se face in fisierele:",
+		"choices": [
+			{ "str": "Online Redo Log Files"},
+			{ "str": "Archived Redo Log Files"},
+			{ "str": "Ambele afirmatii sunt adevarate", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Numarul maxim de tablespace-uri nu poate depasi numarul fisierelor de:",
+		"choices": [
+			{ "str": "Date", "isCorrect": true},
+			{ "str": "Control"},
+			{ "str": "Redo Log"}
+		]
+	},
+	{
+		"quest": "Valoarea implicita pentru INITRANS in cazul indecsilor este:",
+		"choices": [
+			{ "str": "255"},
+			{ "str": "1"},
+			{ "str": "2", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Valoarea implicita pentru MAXTRANS in cazul tabelelor este:",
+		"choices": [
+			{ "str": "2"},
+			{ "str": "255", "isCorrect": true},
+			{ "str": "1"}
+		]
+	},
+	{
+		"quest": "Crearea unei baze de date se face :",
+		"choices": [
+			{ "str": "Cu instanta pornita", "isCorrect": true},
+			{ "str": "Cu procesele de background oprite"},
+			{ "str": "Cu baza de date montata"}
+		]
+	},
+	{
+		"quest": "Procesul Log Writer scrie pe disc :",
+		"choices": [
+			{ "str": "Inainte ca DBWRITER sa scrie pe disc", "isCorrect": true},
+			{ "str": "Dupa ce DBWRITER scrie pe disc"},
+			{ "str": "In acelasi timp cu DBWRITER"}
+		]
+	},
+	{
+		"quest": "In cazul tabelelor partitionate, partitile pot sa fie stocate in tablespace-uri diferite?",
+		"choices": [
+			{ "str": "Nu"},
+			{ "str": "Da", "isCorrect": true},
+			{ "str": "Doar daca au acelasi nume"}
+		]
+	},
+	{
+		"quest": "Tranzactii: {(2, 3, 5), (2, 3, 6), (1, 4, 6)} ; s = 50%. Atunci articolele frecvente sunt:",
+		"choices": [
+			{ "str": "{1, 2, 3, 5, 6}"},
+			{ "str": "{2, 3, 6}", "isCorrect": true},
+			{ "str": "{1, 2, 3, 5}"}
+		]
+	},
+	{
+		"quest": "Pentru 10000 tranzactii cu 10 articole fiecare si s = 10000 putem avea cel mult:",
+		"choices": [
+			{ "str": "100 articole frecvente"},
+			{ "str": "1 articol frecvent"},
+			{ "str": "10 articole frecvente", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Fie multimea de cosuri: {(1, 2, 3, 4), (2, 4, 5), (1, 3, 4)} si 50%. Atunci avem:",
+		"choices": [
+			{ "str": "3 perechi frecvente"},
+			{ "str": "2 perechi frecvente"},
+			{ "str": "4 perechi frecvente", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Daca A este o multime frecventa si s este pragul de suport atunci:",
+		"choices": [
+			{ "str": "A ca multime este in cel putin s% tranzactii", "isCorrect": true},
+			{ "str": "Fiecare articol din A este in cel mult s% tranzactii"},
+			{ "str": "A ca multime este in cel mult s% tranzactii"}
+		]
+	},
+	{
+		"quest": "Din principiul apriori rezulta si ca daca avem doua multimi frecvente de articole nedisjuncte A si B atunci si multimea urmatoare (nevida) e frecventa:",
+		"choices": [
+			{ "str": "A - B", "isCorrect": true},
+			{ "str": "A ∪ B"},
+			{ "str": "A x B"}
+		]
+	},
+	{
+		"quest": "Tranzactii: {(1, 2, 3, 5), (2, 3, 4), (3, 4, 5)} ; s = 50%. Atunci numarul de perechi frecvente este:",
+		"choices": [
+			{ "str": "1"},
+			{ "str": "3", "isCorrect": true},
+			{ "str": "2"}
+		]
+	},
+	{
+		"quest": "Din principiul apriori rezulta si ca daca avem doua multimi frecvente de articole nedisjuncte A si B atunci si multimea urmatoare (nevida) e frecventa:",
+		"choices": [
+			{ "str": "A - (A - B)", "isCorrect": true},
+			{ "str": "A ∪ B"},
+			{ "str": "A x B"}
+		]
+	},
+	{
+		"quest": "Daca avem 10000 de cosuri a cate 100 articole fiecare, iar pragul de suport e 1000, atunci putem avea maxim:",
+		"choices": [
+			{ "str": "10 articole frecvente"},
+			{ "str": "100 articole frecvente"},
+			{ "str": "1000 articole frecvente", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Tranzactii: {(1, 2, 3), (2, 3, 4), (3, 4, 5)} ; s = 50%. Atunci numarul de perechi frecvente este:",
+		"choices": [
+			{ "str": "4"},
+			{ "str": "3", "isCorrect": true},
+			{ "str": "5"}
+		]
+	},
+	{
+		"quest": "Fie multimea de cosuri: {(1, 2, 3, 4), (2, 3, 4, 5), (3, 4, 5, 6)} si pragul de suport 50%. Atunci avem:",
+		"choices": [
+			{ "str": "6 perechi frecvente"},
+			{ "str": "5 perechi frecvente", "isCorrect": true},
+			{ "str": "4 perechi frecvente"}
+		]
+	},
+	{
+		"quest": "Tranzactii: {(1, 2, 3, 5), (2, 3, 5), (1, 4, 6)} ; s = 50%. Atunci articolele frecvente sunt:",
+		"choices": [
+			{ "str": "{2, 3, 5}"},
+			{ "str": "{1, 2, 3, 5}", "isCorrect": true},
+			{ "str": "{1, 2, 3, 5, 6}"}
+		]
+	},
+	{
+		"quest": "Tranzactii: {(1, 2, 3, 5), (2, 3, 4, 5), (3, 4, 5)} ; s = 50%. Suportul regulii {3} -> {5} este:",
+		"choices": [
+			{ "str": "33%"},
+			{ "str": "66%"},
+			{ "str": "100%", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Daca o multime de 3 articole e frecventa (pragul de suport fiind 1000) atunci:",
+		"choices": [
+			{ "str": "Fiecare submultime a sa de doua articole apare in cel putin 1000 de cosuri", "isCorrect": true},
+			{ "str": "Fiecare submultime a sa de doua articole apare in cel mult 1000 de cosuri"},
+			{ "str": "Fiecare submultime a sa de doua articole apare  exact 1000 de cosuri"}
+		]
+	},
+	{
+		"quest": "Daca avem 10000 de cosuri a cate 10 articole fiecare, iar pragul de suport e 1000, atunci putem avea maxim:",
+		"choices": [
+			{ "str": "10 articole frecvente"},
+			{ "str": "1000 articole frecvente"},
+			{ "str": "100 articole frecvente", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Daca in matricea de calcul a similaritatii liniile si coloanele sunt studenti si (I, J) = 1 daca studentul I are medie egala cu studentul J atunci daca doua coloane A si B sunt 100% similare atunci:",
+		"choices": [
+			{ "str": "A si B pot sa nu aiba medii egale"},
+			{ "str": "A si B au medii egale", "isCorrect": true},
+			{ "str": "Matricea e incorecta"}
+		]
+	},
+	{
+		"quest": "Fie coloanele C1 = [1, 1, 1, 1, 1, 0, 1, 1, 1, 1] si C2 = [1, 0, 1, 0, 1, 0, 1, 0, 1, 1]. Atunci ele sunt:",
+		"choices": [
+			{ "str": "33% similare"},
+			{ "str": "66% similare", "isCorrect": true},
+			{ "str": "90% similare"}
+		]
+	},
+	{
+		"quest": "Fie coloanele C1 = [1, 1, 1, 1, 1, 0, 1, 1, 1, 1] si C2 = [1, 0, 1, 0, 0, 0, 1, 0, 0, 0]. Atunci ele sunt:",
+		"choices": [
+			{ "str": "33% similare", "isCorrect": true},
+			{ "str": "66% similare"},
+			{ "str": "90% similare"}
+		]
+	},
+	{
+		"quest": "Fie coloana C = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]. O signatura calculata cu dispersia de tip 3-min poate fi:",
+		"choices": [
+			{ "str": "234"},
+			{ "str": "123", "isCorrect": true},
+			{ "str": "135"}
+		]
+	},
+	{
+		"quest": "Fie coloana C = [1, 0, 1, 0, 1, 0, 1, 0, 0, 0]. O signatura calculata cu dispersia de tip Min poate fi si:",
+		"choices": [
+			{ "str": "567", "isCorrect": true},
+			{ "str": "786"},
+			{ "str": "678"}
+		]
+	},
+	{
+		"quest": "Fie coloana C = [1, 0, 0, 1, 1, 0, 1, 1, 1, 1]. O signatura calculata cu dispersia de tip 3-min poate fi:",
+		"choices": [
+			{ "str": "457"},
+			{ "str": "356", "isCorrect": true},
+			{ "str": "342"}
+		]
+	},
+	{
+		"quest": "Fie coloana C = [1, 0, 1, 0, 0, 0, 1, 0, 0, 1]. O signatura calculata cu dispersia de tip 3-min poate fi: ",
+		"choices": [
+			{ "str": "584"},
+			{ "str": "789", "isCorrect": true},
+			{ "str": "112"}
+		]
+	},
+	{
+		"quest": "Fie coloana C = [1, 0, 1, 0, 1, 0, 1, 0, 1, 0]. O signatura calculata cu dispersia de tip Min poate fi si:",
+		"choices": [
+			{ "str": "999"},
+			{ "str": "777"},
+			{ "str": "555", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Fie coloanele C1 = [1, 0, 0, 1, 1, 0, 1, 1, 1, 1] si C2 = [1, 0, 1, 0, 1, 0, 1, 0, 1, 0]. Atunci ele sunt:",
+		"choices": [
+			{ "str": "60% similare"},
+			{ "str": "40% similare"},
+			{ "str": "50% similare", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Daca in matricea de calcul a similaritatii liniile si coloanele sunt studenti si (I, J) = 1 daca studentul I are o medie diferita de cea a studentului  J atunci daca doua coloane A si B sunt 100% similare atunci:",
+		"choices": [
+			{ "str": "Matricea e incorecta"},
+			{ "str": "A si B pot sa nu aiba medii egale"},
+			{ "str": "A si B au medii egale", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Fie coloana C = [1, 0, 1, 0, 1, 0, 1, 0, 1, 0]. O signatura calculata cu dispersia de tip 3-Min poate fi si:",
+		"choices": [
+			{ "str": "678", "isCorrect": true},
+			{ "str": "566"},
+			{ "str": "269"}
+		]
+	},
+	{
+		"quest": "Fie coloana C = [1, 0, 1, 0, 0, 0, 1, 0, 0, 1]. O signatura calculata cu dispersia de tip Min poate fi si:",
+		"choices": [
+			{ "str": "578"},
+			{ "str": "548"},
+			{ "str": "765", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Fie coloanele C1 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1] si C2 = [1, 0, 1, 0, 1, 0, 1, 0, 0, 0]. Atunci ele sunt:",
+		"choices": [
+			{ "str": "40% similare", "isCorrect": true},
+			{ "str": "50% similare"},
+			{ "str": "60% similare"}
+		]
+	},
+	{
+		"quest": "Luați în considerare o școală cu 40% băieți și 60% fete. Fetele poartă pantaloni scurți sau fuste în proporții egale, iar băieții doar pantaloni scurți. Un observator vede de la mare distanță o persoană purtând pantaloni scurți. Care este probabilitatea ca persoana respectivă să fie fată?",
+		"choices": [
+			{ "str": "aprox. 53%"},
+			{ "str": "aprox. 43%", "isCorrect": true},
+			{ "str": "aprox. 63%"}
+		]
+	},
+	{
+		"quest": "Într-un spațiu 1D avem 2 puncte roșii (1 și 3) și 2 puncte albastre (10 și 11). Folosind kNN pentru k = 3, punctul 7 este albastru?",
+		"choices": [
+			{ "str": "Nu"},
+			{ "str": "Da", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Un arbore de decizie poate fi convertit în:",
+		"choices": [
+			{ "str": "O singură regulă complexă"},
+			{ "str": "Celelalte doua raspunsuri sunt incorecte"},
+			{ "str": "Un set de reguli", "isCorrect": true}
+			
+		]
+	},
+	{
+		"quest": "Un clasificator este construit pe baza unui:",
+		"choices": [
+			{ "str": "Set de antrenament", "isCorrect": true},
+			{ "str": "Set de validare"},
+			{ "str": "Set de test"}
+			
+		]
+	},
+	{
+		"quest": "Entropie (D) = -Suma j [Pr (cj) * log2 Pr (cj)]. Dacă D conține 100% exemple pozitive, entropia lui D este:",
+		"choices": [
+			{ "str": "-1"},
+			{ "str": "1"},
+			{ "str": "0", "isCorrect": true}
+			
+		]
+	},
+	{
+		"quest": "KNN",
+		"choices": [
+			{ "str": "Este doar o metodă de clasificare care nu produce un clasificator", "isCorrect": true},
+			{ "str": "Produce un clasificator folosit apoi în clasificare"}			
+		]
+	},
+	{
+		"quest": "În cursul nostru ID3 înseamnă:",
+		"choices": [
+			{ "str": "Tag Embedded In MPEG I Layer III Files"},
+			{ "str": "International Direct Distance Dialing"},
+			{ "str": "Interactive Dichotomizer 3", "isCorrect": true}
+			
+		]
+	},
+	{
+		"quest": "În metodele asambliste:",
+		"choices": [
+			{ "str": "Aceste metode nu sunt utilizate în clasificare"},
+			{ "str": "Un clasificator este împărțit în mai multe componente"},
+			{ "str": "Mai mulți clasificatorii sunt agregați într-unul singur", "isCorrect": true}
+			
+		]
+	},
+	{
+		"quest": "O funcție la distanță trebuie să îndeplinească și condiția:",
+		"choices": [
+			{ "str": "f (x, y)&gt; = f (x, z) + f (z, y)."},
+			{ "str": "f (x, y) &lt;&gt; f (x, z) + f (z, y)."},
+			{ "str": "f (x, y) &lt;= f (x, z) + f (z, y).", "isCorrect": true}
+			
+		]
+	},
+	{
+		"quest": "Entropie (D) = -Suma j [Pr (cj) * log2 Pr (cj)]. Dacă D conține 100% exemple negative, entropia lui D este:",
+		"choices": [
+			{ "str": "0", "isCorrect": true},
+			{ "str": "1"},
+			{ "str": "-1"}
+			
+		]
+	},
+	{
+		"quest": "Luați în considerare o școală cu 50% băieți și 50% fete. Fetele poartă pantaloni scurți sau fuste în proporții egale, iar băieții doar pantaloni scurți. Un observator vede de la mare distanță o persoană purtând pantaloni scurți. Care este probabilitatea ca persoana respectivă sa fie fată?",
+		"choices": [
+			{ "str": "aprox. 33%", "isCorrect": true},
+			{ "str": "aprox. 43%"},
+			{ "str": "aprox. 53%"}
+			
+		]
+	},
+	{
+		"quest": "Dacă pentru 200 de articole 50 nu sunt clasificate corect, acuratețea este:",
+		"choices": [
+			{ "str": "50%"},
+			{ "str": "75%", "isCorrect": true},
+			{ "str": "25%"}
+			
+		]
+	},
+	{
+		"quest": "În cazul separării SVM / neliniare, asa-numitul spațiu caracteristic - Feature Space - are de obicei:",
+		"choices": [
+			{ "str": "Mai multe dimensiuni", "isCorrect": true},
+			{ "str": "Mai putine dimensiuni"},
+			{ "str": "Acelasi numar de dimensiuni"}
+			
+		]
+	},
+	{
+		"quest": "Termenul Bagging provine de la:",
+		"choices": [
+			{ "str": "Bootstrap Agging"},
+			{ "str": "Bootstrap Aggregating", "isCorrect": true},
+			{ "str": "Baggels Proofreading"}
+			
+		]
+	},
+	{
+		"quest": "Intr-un spatiu 1D avem 2 puncte rosii (1 si 3) si 2 puncte albastre (10 si 11). Folosind kNN pentru k = 3, punctul 5 este albastru?",
+		"choices": [
+			{ "str": "Da"},
+			{ "str": "Nu", "isCorrect": true}
+			
+		]
+	},
+	{
+		"quest": "Daca pentru 200 de articole, toate pozitive, 50 nu sunt clasificate corect, atunci scorul F1 este:",
+		"choices": [
+			{ "str": "85%", "isCorrect": true},
+			{ "str": "55%"},
+			{ "str": "25%"}
+			
+		]
+	},
+	{
+		"quest": "Entropie (D) = -Suma j [Pr (cj) * log2 Pr (cj)]. Dacă D are 50% exemple pozitive si 50% negative, entropia lui D este:",
+		"choices": [
+			{ "str": "0"},
+			{ "str": "1", "isCorrect": true},
+			{ "str": "-1"}
+			
+		]
+	},
+	{
+		"quest": "Luați în considerare o școală cu 80% băieți și 20% fete. Fetele poartă pantaloni scurți sau fuste în proporții egale, iar băieții doar pantaloni scurți. Un observator vede de la mare distanță o persoană purtând pantaloni scurți. Care este probabilitatea ca persoana respectivă sa fie fată?",
+		"choices": [
+			{ "str": "aprox. 11%", "isCorrect": true},
+			{ "str": "aprox. 31%"},
+			{ "str": "aprox. 21%"}
+			
+		]
+	},
+	{
+		"quest": "Cand începem cu un set de articole neetichetate avem:",
+		"choices": [
+			{ "str": "Mai mic decat numarul de atribute ale setului de antrenament", "isCorrect": true},
+			{ "str": "Egal cu numarul de atribute ale setului de antrenament"},
+			{ "str": "Mai mare decat numaul de atribute ale setului de antrenament"}
+			
+		]
+	},
+	{
+		"quest": "Luați în considerare o școală cu 50% băieți și 50% fete. 1/4 dintre fete poartă pantaloni scurți, 3/4 poartă fuste, iar băieții doar pantaloni scurți. Un observator vede de la mare distanță o persoană purtând pantaloni scurți. Care este probabilitatea ca persoana respectivă sa fie fată?",
+		"choices": [
+			{ "str": "20%", "isCorrect": true},
+			{ "str": "30%"},
+			{ "str": "10%"}
+			
+		]
+	},
+	{
+		"quest": "Dacă pentru 200 de articole 50 nu sunt clasificate corect, atunci rata de eroare este:",
+		"choices": [
+			{ "str": "50%"},
+			{ "str": "75%"},
+			{ "str": "25%", "isCorrect": true}
+			
+		]
+	},
+	{
+		"quest": "În cazul SVM, o funcție kernel este de tipul:",
+		"choices": [
+			{ "str": "K (Xi, Xj) = fi (Xi) * fi (Xj)", "isCorrect": true},
+			{ "str": "K (Xi, Xj) = fi (Xi) / fi (Xj)"},
+			{ "str": "K (Xi, Xj) = fi (Xi) + fi (Xj)"}
+			
+		]
+	},
+	{
+		"quest": "Dacă pentru 200 de articole, toate pozitive, 50 nu sunt clasificate corect, atunci rechemarea este:",
+		"choices": [
+			{ "str": "75%", "isCorrect": true},
+			{ "str": "0%"},
+			{ "str": "50%"}
+			
+		]
+	},
+	{
+		"quest": "Entropie (D) = -Suma j [Pr (cj) * log2 Pr (cj)]. Dacă D conține în proporții egale exemple din 4 clase diferite, entropia lui D este:",
+		"choices": [
+			{ "str": "0"},
+			{ "str": "2", "isCorrect": true},
+			{ "str": "-2"}
+			
+		]
+	},
+	{
+		"quest": "Când începem cu un set de articole etichetate (etichete dintr-un set de clase) avem:",
+		"choices": [
+			{ "str": "Învățarea supervizată", "isCorrect": true},
+			{ "str": "Reguli de asociere"},
+			{ "str": "Învățare nesupervizată"}
+			
+		]
+	},
+	{
+		"quest": "In 1D, functia D(x, a) = x+sqr( y ) poate fi folosita ca functie de distanta?",
+		"choices": [
+			{ "str": "Da"},
+			{ "str": "Nu", "isCorrect": true}
+			
+		]
+	},
+	{
+		"quest": "Fie punctele {1, 2, 3, 4, 5, 6}. Daca aplicam K-Means pentru K = 3 si centroizi initiali 1, 2 si 3 obtinem clusterele:",
+		"choices": [
+			{ "str": "(1, 2), (3, 4), (5, 6)"},
+			{ "str": "(1), (2, 3), (4, 5, 6)", "isCorrect": true},
+			{ "str": "(1), (2, 3, 4), (5, 6)"}
+			
+		]
+	},
+	{
+		"quest": "LCS('Ionescu Vasile', 'Popescu Sile') are valoarea: (Obs: LCS=cea mai lunga secventa comuna)",
+		"choices": [
+			{ "str": "10"},
+			{ "str": "9", "isCorrect": true},
+			{ "str": "8"}
+			
+		]
+	},
+	{
+		"quest": "In 1D, functia D(x, y) = sqr( x )-sqr( y ) poate fi folosita ca functie de distanta?",
+		"choices": [
+			{ "str": "Da"},
+			{ "str": "Nu", "isCorrect": true}
+			
+		]
+	},
+	{
+		"quest": "Fie in plan punctele A, B and C si distanta dintre ele d(A, B) = 3, d(A, C) = 5, d(B, C) = 4 (numere pitagoreice). Folosind FastMap, coordonata lui A pe axa BC (origine in B) este:",
+		"choices": [
+			{ "str": "4"},
+			{ "str": "0", "isCorrect": true},
+			{ "str": "3"}
+			
+		]
+	},
+	{
+		"quest": "In 3D, distanta cea mai mica dintre doua puncte este data in general de:",
+		"choices": [
+			{ "str": "Distanta Manhattan (norma L1)"},
+			{ "str": "Distanta comuna (norma L2)"},
+			{ "str": "Maximul pe o dimensiune", "isCorrect": true}
+			
+		]
+	},
+	{
+		"quest": "LCS('Ionescu Vasile', 'Popescu Ion') are valoarea: (Obs: LCS=cea mai lunga secventa comuna) ",
+		"choices": [
+			{ "str": "7"},
+			{ "str": "5"},
+			{ "str": "6", "isCorrect": true}
+			
+		]
+	},
+	{
+		"quest": "Fie punctele {1, 2, 5, 6} in 1D. Daca aplicam K-Means pentru K = 2 si centroizi initiali 1 si 2 obtinem clusterele:",
+		"choices": [
+			{ "str": "(1) and (2, 5, 6)"},
+			{ "str": "(1, 5) and (2, 6)"},
+			{ "str": "(1, 2) and (5, 6)", "isCorrect": true}
+			
+		]
+	},
+	{
+		"quest": "In 1D, functia D(x, y) = sqr( x )+sqr( y ) poate fi folosita ca functie de distanta?",
+		"choices": [
+			{ "str": "Da"},
+			{ "str": "(1, 5) and (2, 6)"},
+			{ "str": "(1, 2) and (5, 6)", "isCorrect": true}
+			
+		]
+	},
+	{
+		"quest": "Fie in plan punctele A, B and C si distanta dintre ele d(A, B) = 3, d(A, C) = 5, d(B, C) = 4 (numere pitagoreice). Folosind FastMap, coordonata lui C pe axa AB (origine in A) este:",
+		"choices": [
+			{ "str": "2"},
+			{ "str": "3", "isCorrect": true},
+			{ "str": "5"}
+			
+		]
+	},
+	{
+		"quest": "In plan, distanta cea mai mare dintre doua puncte este data in general de:",
+		"choices": [
+			{ "str": "Maximul pe o dimensiune"},
+			{ "str": "Distanta comuna (norma L2)"},
+			{ "str": "Distanta Manhattan (norma L1)", "isCorrect": true}
+			
+		]
+	},
+	{
+		"quest": "Valoarea de index a unei pagini reflecta aceasta proprietate ca:",
+		"choices": [
+			{ "str": "Valoare relativa", "isCorrect": true},
+			{ "str": "Valoare absoluta"},
+			{ "str": "Valoare categorica"}
+			
+		]
+	},
+	{
+		"quest": "La determinarea rangului unei pagini (fara taxare) daca in final se ajunge la [0,0, …]",
+		"choices": [
+			{ "str": "Exista cel putin un Dead End", "isCorrect": true},
+			{ "str": "Exista cel putin un Dead End si cel putin o Capcana"},
+			{ "str": "Exista cel putin o Capcana"}
+			
+		]
+	},
+	{
+		"quest": "Determinarea valorilor de index si autoritate pentru pagini se face:",
+		"choices": [
+			{ "str": "Metoda prezentata nu specifica"},
+			{ "str": "Se pot determina separat", "isCorrect": true},
+			{ "str": "Doar impreuna"}
+			
+		]
+	},
+	{
+		"quest": "La determinarea rangului unei pagini (fara taxare) daca in final se ajunge la [0,0, …]",
+		"choices": [
+			{ "str": "Exista pagini fara succesori", "isCorrect": true},
+			{ "str": "Exista pagini fara predecesori"},
+			{ "str": "Exista pagini autoreferite"}
+			
+		]
+	},
+	{
+		"quest": "In formula de calcul pentru gradul de autoritate si index pentru pagini, &#955; (lambda) si &#956; (miu) sunt:",
+		"choices": [
+			{ "str": "Matrici de n x m"},
+			{ "str": "Numere reale", "isCorrect": true},
+			{ "str": "Vectori"}
+			
+		]
+	},
+	{
+		"quest": "Daca am modifica experimentul 'Carti si Autori' pentru a obtine 'Carti si Autori si Edituri', un sablon ar avea:",
+		"choices": [
+			{ "str": "5 parti componente"},
+			{ "str": "7 parti componente", "isCorrect": true},
+			{ "str": "6 parti componente"}
+			
+		]
+	},
+	{
+		"quest": "Daca a, b şi c (cuvinte) apar fiecare în 2% din toate documentele şi S={a, b, c} apar în 0.2% din documente, interesul lui S este aproximativ:",
+		"choices": [
+			{ "str": "3.3"},
+			{ "str": "2.7", "isCorrect": true},
+			{ "str": "2.3"}
+			
+		]
+	},
+	{
+		"quest": "In cazul calculului rangului paginii, o Capcana semnifica:",
+		"choices": [
+			{ "str": "Un grup de una sau mai multe pagini care nu au legaturi catre pagini din afara grupului", "isCorrect": true},
+			{ "str": "O pagina care nu are succesori"},
+			{ "str": "O situatie in care calea de la o entitate la alta pare existenta, dar poate fi rupta in unele cazuri"}
+			
+		]
+	},
+	{
+		"quest": "In cazul calculului rangului paginii, Dead End semnifica:",
+		"choices": [
+			{ "str": "O pagină care nu are succesori ", "isCorrect": true},
+			{ "str": "O situatie de tip Deadlock din baze de date"},
+			{ "str": "Un grup de una sau mai multe pagini care nu au legături către pagini din afara grupului"}
+			
+		]
+	},
+	{
+		"quest": "Valoarea de autoritate a unei pagini reflecta aceasta proprietate ca:",
+		"choices": [
+			{ "str": "Valoare relativa", "isCorrect": true},
+			{ "str": "Valoare absoluta"},
+			{ "str": "Valoare categorica"}
+		]
+	},
+	{
+		"quest": "In cazul experimentului 'Carti si Autori', un sablon are:",
+		"choices": [
+			{ "str": "4 parti componente"},
+			{ "str": "5 parti componente", "isCorrect": true},
+			{ "str": "6 parti componente"}
+		]
+	},
+	{
+		"quest": "La determinarea rangului unei pagini (fara taxare) daca in final se ajunge la un vector cu o singura componenta nenula:",
+		"choices": [
+			{ "str": "Exista pagini autoreferite"},
+			{ "str": "Exista doar o pagina autoreferita", "isCorrect": true},
+			{ "str": "Exista pagini fara succesori"}
+		]
+	},
+	{
+		"quest": "In cadrul cursului nostru DICE e abrevierea pentru:",
+		"choices": [
+			{ "str": "DARPA Initiative in Concurrent Engineering"},
+			{ "str": "Distributed Informatics Computing Environment"},
+			{ "str": "Dynamic Itemset Counting Engine", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "In matricea stochastica pentru determinarea rangului paginii suma este 1 pe:",
+		"choices": [
+			{ "str": "Linii"},
+			{ "str": "Diagonala principala"},
+			{ "str": "Coloane", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Rangul unei pagini reflecta importanta paginii ca:",
+		"choices": [
+			{ "str": "Valoare categorica"},
+			{ "str": "Valoare absoluta"},
+			{ "str": "Valoare relativa", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Daca a, b şi c (cuvinte) apar fiecare în 3% din toate documentele şi S={a, b, c} apar în 0.3% din documente, interesul lui S este aproximativ:",
+		"choices": [
+			{ "str": "2.7"},
+			{ "str": "3.3"},
+			{ "str": "2.3", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Daca a, b şi c (cuvinte) apar fiecare în 4% din toate documentele şi S={a, b, c} apar în 0.4% din documente, interesul lui S este aproximativ:",
+		"choices": [
+			{ "str": "2.7"},
+			{ "str": "2", "isCorrect": true},
+			{ "str": "2.3"}
+		]
+	},
+	{
+		"quest": "In matricea stochastica pentru determinarea rangului paginii numarul de succesori ai unei pagini e dat de:",
+		"choices": [
+			{ "str": "Numarul de valori non zero de pe diagonala corespunzatoare paginii"},
+			{ "str": "Numarul de valori non zero de pe coloana corespunzatoare paginii", "isCorrect": true},
+			{ "str": "Numarul de valori non zero de pe linia corespunzatoare paginii"}
+		]
+	},
+	{
+		"quest": "La determinarea rangului unei pagini: o pagina este importanta daca:",
+		"choices": [
+			{ "str": "Refera pagini importante"},
+			{ "str": "E referita de pagini importante", "isCorrect": true},
+			{ "str": "Are un rang mai mare decat al predecesorilor sai"}
+		]
+	},
+	{
+		"quest": "Relatia dintre Data Warehouse (DW) si un Data Mart (DM) este urmatoarea:",
+		"choices": [
+			{ "str": "DW include DM", "isCorrect": true},
+			{ "str": "DM include DW"},
+			{ "str": "Variantele a si b sunt ambele false"}
+		]
+	},
+	{
+		"quest": "Faptul că datele dintr-un depozit de date sunt non-volatile înseamnă că:",
+		"choices": [
+			{ "str": "Datele pot fi actualizate (UPDATE) dar nu mai pot fi șterse"},
+			{ "str": "O data încărcate în depozit datele nu mai sunt modificate sau șterse", "isCorrect": true},
+			{ "str": "Datele pot fi actualizate sau șterse în funcție de subiectele conținute"}
+		]
+	},
+	{
+		"quest": "Daca A este o multime frecventa si s este pragul de suport atunci:",
+		"choices": [
+			{ "str": "A ca multime este in cel putin s% tranzactii", "isCorrect": true},
+			{ "str": "A ca multime este in cel mult s% tranzactii"},
+			{ "str": "Fiecare articol din A este in cel mult s% tranzactii"}
+		]
+	},
+	{
+		"quest": "O tabela Oracle aflata in relatie cu o alta tabela pe care s-a creat o constrangere de tip FOREIGN KEY poate fi stearsa din dictionar daca:",
+		"choices": [
+			{ "str": "Nu exista nicio restrictie in acest caz"},
+			{ "str": "Se sterg mai intai datele din tabela cu care este in relatie"},
+			{ "str": "Se dezactiveaza mai intai constrangerea de integritate", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Optiunea FLASHBACK ON de la crearea unui tablespace este utilizata pentru:",
+		"choices": [
+			{ "str": "A forta inregistrarea in Redo Log a incarcarilor cu date"},
+			{ "str": "A produce o stare consistenta a bazei de date"},
+			{ "str": "A readuce baza de date la o stare anterioara", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Cererea GRANT ... TO ... adauga privilegii:",
+		"choices": [
+			{ "str": "Obiect"},
+			{ "str": "Sistem", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Daca matricea pentru calcularea rangului unei pagini are liniile: (1/2, 1/3, 0), (0, 1/3, 0) si (1/2, 1/3, 1/2) atunci:",
+		"choices": [
+			{ "str": "Matricea este gresit calculata", "isCorrect": true},
+			{ "str": "Matricea este corecta"}
+		]
+	},
+	{
+		"quest": "Dacă pentru 2000 de articole din care 1000 sunt pozitive si restul negative, 300 de pozitive si 300 de negative nu sunt clasificate corect atunci senzitivitea (recall) este in intervalul:",
+		"choices": [
+			{ "str": "[0.8, 1]"},
+			{ "str": "[0, 0.4]"},
+			{ "str": "[0.5, 0.7]", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Daca in momentul blocarii unui cont de user Oracle acesta avea o tranzactie in desfasurare, aceasta:",
+		"choices": [
+			{ "str": "Este lasata sa se finalizeze"},
+			{ "str": "Este revocata (ROLLBACK)", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Un bloc din Database Buffer poate contine la un moment dat:",
+		"choices": [
+			{ "str": "Un singur bloc al bazei de date"},
+			{ "str": "Un bloc de date sau un bloc de inregistrari de tip Redo Log"},
+			{ "str": "Unul sau mai multe blocuri ale bazei de date + 1", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Un bloc din Database Buffer poate contine la un moment dat:",
+		"choices": [
+			{ "str": "Un singur bloc al bazei de date"},
+			{ "str": "Un bloc de date sau un bloc de inregistrari de tip Redo Log"},
+			{ "str": "Unul sau mai multe blocuri ale bazei de date + 1", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Stergerea unui fisier de control in Oracle se face:",
+		"choices": [
+			{ "str": "Cu baza de date montata"},
+			{ "str": "Cu instanta pornita"},
+			{ "str": "Cu instanta oprita", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Un utilizator poate avea deschise simultan doua sau mai multe ferestre SQL*Plus pe aceeasi masina?",
+		"choices": [
+			{ "str": "Da", "isCorrect": true},
+			{ "str": "Nu"},
+			{ "str": "Doar in cazul Parallel"}
+		]
+	},
+	{
+		"quest": "Deblocarea contului unui user Oracle se face cu comanda:",
+		"choices": [
+			{ "str": "UNLOCK USER"},
+			{ "str": "ALTER USER", "isCorrect": true},
+			{ "str": "ALTER ACCOUNT"}
+		]
+	},
+	{
+		"quest": "Care comanda se poate folosi pentru a muta un index intr-un alt tablespace decat cel in care a fost creat:",
+		"choices": [
+			{ "str": "UPDATE DBA_INDEXES SET tablespace_name =new_tablespace WHERE index_name=’..’;"},
+			{ "str": "ALTER INDEX index_name RENAME DATAFILE new_path_file_name;"},
+			{ "str": "ALTER INDEX index_name_idx REBUILD new_tablespace_name;", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "In cazul in care la crearea unui tablespace se specifica SEGMENT SPACE MANAGEMENT MANUAL, spatiul liber din segment este gestionat:",
+		"choices": [
+			{ "str": "Cu ajutorul unor bitmapuri"},
+			{ "str": "Cu ajutorul unor arbori binari"},
+			{ "str": "Cu ajutorul unor liste", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Pentru a vedea structura tabelara a unei tabele Oracle se poate folosi urmatorul view din dictionarul bazei de date:",
+		"choices": [
+			{ "str": "ALL_TABLES"},
+			{ "str": "USER_OBJECTS"},
+			{ "str": "USER_TAB_COLUMNS", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Vederea DBA_FREE_SPACE are o cheie primara:",
+		"choices": [
+			{ "str": "Nu are cheie primara"},
+			{ "str": "Alfanumerica"},
+			{ "str": "Numerica", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Daca matricea pentru calcularea rangului unei pagini are liniile: (1/3, 1/2, 1), (1/3, 0, 0) si (1/3, 1/2, 0) atunci:",
+		"choices": [
+			{ "str": "Este o situatie tip capcana (spider trap)", "isCorrect": true},
+			{ "str": "Este o situatie normala si se pot calcula ranguri nenule"},
+			{ "str": "Este o situatie tip Dead End"}
+		]
+	},
+	{
+		"quest": "Numele segmentelor de undo utilizate in sesiunea curenta se pot vizualiza folosind view-ul:",
+		"choices": [
+			{ "str": "V$SESSION"},
+			{ "str": "V$ROLLNAME", "isCorrect": true},
+			{ "str": "V$ROLLSTAT"}
+		]
+	},
+	{
+		"quest": "In cazul unei tabele create cu CREATE GLOBAL TEMPORARY TABLE, datele inserate:",
+		"choices": [
+			{ "str": "Sistemul le sterge la terminarea sesiunii care le-a inserat", "isCorrect": true},
+			{ "str": "Celelalte doua raspunsuri nu sunt exacte"},
+			{ "str": "Raman si dupa terminarea sesiunii care le-a inserat"}
+		]
+	},
+	{
+		"quest": "In cazul unei tabele create cu CREATE GLOBAL TEMPORARY TABLE, datele inserate sunt vizibile:",
+		"choices": [
+			{ "str": "Tuturor sesiunilor active"},
+			{ "str": "Doar sesiunii care le insereaza", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Pentru a crea o constrangere de integritate pe o tabela Oracle se poate folosi comanda:",
+		"choices": [
+			{ "str": "ALTER TABLE all_constraints SET constraint_name= constraint_value …"},
+			{ "str": "ALTER TABLE user_constraints ADD CONSTRAINT constraint_name …"},
+			{ "str": "ALTER TABLE table_name ADD CONSTRAINT constraint_name …", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Vederea V$CONTROLFILE poate fi folosita dupa pasul:",
+		"choices": [
+			{ "str": "Pornire instanta"},
+			{ "str": "Montare BD", "isCorrect": true},
+			{ "str": "Deschidere BD"}
+		]
+	},
+	{
+		"quest": "Distanta edit intre sirurile 'Eu sunt acasa' si 'Eu nu sunt acasa' este:",
+		"choices": [
+			{ "str": "1"},
+			{ "str": "3", "isCorrect": true},
+			{ "str": "2"}
+		]
+	},
+	{
+		"quest": "O tabelă de fapte (măsuri) reprezintă:",
+		"choices": [
+			{ "str": "Numere operaționale de control (numar factură, număr comanda, etc.)"},
+			{ "str": "Un proces de afaceri", "isCorrect": true},
+			{ "str": "Entități ale lumii reale și nu procese de afaceri"}
+		]
+	},
+	{
+		"quest": "Deblocarea contului unui user Oracle se face cu comanda:",
+		"choices": [
+			{ "str": "UNLOCK USER"},
+			{ "str": "ALTER ACCOUNT"},
+			{ "str": "ALTER USER", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Fie multimea de cosuri: {(1, 3, 4), (2, 3, 5), (1, 2, 3, 5), (2, 5), (1, 2, 3, 5)} si pragul de suport 80%. Atunci regula 2 → 5 are increderea:",
+		"choices": [
+			{ "str": "80%", "isCorrect": true},
+			{ "str": "75%"},
+			{ "str": "100%"}
+		]
+	},
+	{
+		"quest": "IQR pentru mulțimea {20, 0, 20, 0, 20, 0} este:",
+		"choices": [
+			{ "str": "20", "isCorrect": true},
+			{ "str": "0"},
+			{ "str": "10"}
+		]
+	},
+	{
+		"quest": "Cate coloane are vederea V$SGA?",
+		"choices": [
+			{ "str": "2", "isCorrect": true},
+			{ "str": ">=4"},
+			{ "str": "3"}
+		]
+	},
+	{
+		"quest": "O dimensiune degenerată reprezintă:",
+		"choices": [
+			{ "str": "Numere operaționale de control (număr factură, număr comanda, etc.)", "isCorrect": true},
+			{ "str": "Entități ale lumii reale și nu procese de afaceri"},
+			{ "str": "Un proces de afaceri"}
+		]
+	},
+	{
+		"quest": "La startarea unei instante Oracle parametrii de initializare pot fi preluati din fisierul:",
+		"choices": [
+			{ "str": "SPFILE", "isCorrect": true},
+			{ "str": "DATAFILE"},
+			{ "str": "LOGFILE"}
+		]
+	},
+	{
+		"quest": "O tabelă de dimensiuni reprezintă:",
+		"choices": [
+			{ "str": "Entități ale lumii reale și nu procese de afaceri", "isCorrect": true},
+			{ "str": "Numere operaționale de control (numar factură, număr comanda, etc.)"},
+			{ "str": "Un proces de afaceri"}
+		]
+	},
+	{
+		"quest": "Un privilegiu de inserare pe o coloana a unei tabele, primit de catre un user, poate fi vazut in dictionar in view-ul :",
+		"choices": [
+			{ "str": "DBA_COL_PRIVS", "isCorrect": true},
+			{ "str": "DBA_TAB_PRIVS"},
+			{ "str": "DBA_TAB_COLUMNS"}
+		]
+	},
+	{
+		"quest": "Daca matricea pentru calcularea rangului unei pagini are liniile: (1/2, 0, 1/2), (1/2, 0, 0) si (0, 0, 1/2) atunci:",
+		"choices": [
+			{ "str": "Este o situatie normala si se pot calcula ranguri nenule"},
+			{ "str": "Este o situatie tip Dead End", "isCorrect": true},
+			{ "str": "Este o situatie tip capcana (spider trap)"}
+		]
+	},
+	{
+		"quest": "Cererea GRANT ... ON ... adauga privilegii:",
+		"choices": [
+			{ "str": "Obiect", "isCorrect": true},
+			{ "str": "Sistem"}
+		]
+	},
+	{
+		"quest": "Copierea unei tabele se poate face cu:",
+		"choices": [
+			{ "str": "COPY TABLE"},
+			{ "str": "DUPLICATE TABLE"},
+			{ "str": "CREATE TABLE", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Care comanda este corecta pentru vizualizarea tablespace-urilor create intr-o baza de date Oracle:",
+		"choices": [
+			{ "str": "SELECT tablespace_name FROM dba_tablespaces;", "isCorrect": true},
+			{ "str": "Ambele comenzi specificate sunt corecte"},
+			{ "str": "SELECT tablespace_name FROM v$database;"}
+		]
+	},
+	{
+		"quest": "Distanta Manhattan intre punctele A(1, 2) si B(59, -29) este:",
+		"choices": [
+			{ "str": "87"},
+			{ "str": "89", "isCorrect": true},
+			{ "str": "85"}
+		]
+	},
+	{
+		"quest": "Crearea unui nou fisier de control se face:",
+		"choices": [
+			{ "str": "Cu baza de date montata"},
+			{ "str": "Cu instanta oprita"},
+			{ "str": "Cu instanta pornita", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Se recomanda ca fisierele de Redo Log sa fie plasate:",
+		"choices": [
+			{ "str": "Pe acelasi dispozitiv"},
+			{ "str": "Pe dispozitive diferite", "isCorrect": true},
+			{ "str": "In fisierele de date"}
+		]
+	},
+	{
+		"quest": "Vizualizarea grupurilor si membrilor fisierelor de log dintr-o baza de date Oracle se face cu comanda:",
+		"choices": [
+			{ "str": "SELECT groups,current_group#, status FROM v$thread;"},
+			{ "str": "Se poate folosi oricare dintre comenzile specificate la celelalte puncte"},
+			{ "str": "SELECT group#, member FROM v$logfile;", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "In momentul blocarii unui cont (LOCK), daca userul e logat la acel moment:",
+		"choices": [
+			{ "str": "Sesiunea nu va fi afectata de schimbare", "isCorrect": true},
+			{ "str": "Sesiunea va fi afectata de schimbare"}
+		]
+	},
+	{
+		"quest": "Recuperarea care poate fi necesara la pornirea dupa un incident presupune:",
+		"choices": [
+			{ "str": "Actualizarea fisierelor de Redo Log pe baza modificarilor din fisierele de date", "isCorrect": true},
+			{ "str": "Actualizarea fisierelor de date pe baza modificarilor din fisierele Redo log"},
+			{ "str": "Actualizarea fisierelor de Redo Log pe baza modificarilor din fisierele de parametri"}
+		]
+	},
+	{
+		"quest": "S-a constatat ca cei care cumpara A cumpara mai mult decat media B, unde:",
+		"choices": [
+			{ "str": "(A = bere, B = scutece)"},
+			{ "str": "(A = scutece, B = bere)", "isCorrect": true},
+			{ "str": "Ambele variante sunt adevarate"}
+		]
+	},
+	{
+		"quest": "In algoritmul BFR pentru un spatiu avand k dimensiuni, pentru fiecare Discard Set se tin:",
+		"choices": [
+			{ "str": "2k -1 numere"},
+			{ "str": "2k + 1 numere", "isCorrect": true},
+			{ "str": "k numere"}
+		]
+	},
+	{
+		"quest": "In cazul FastMap, daca avem punctele A, B si C avand distantele D(A, B) = D(A, C) = D(B, C) = 1, daca la primul pas se alege ca axa BC, atunci distanta reportata pentru pasul al doilea intre punctele A si B este:",
+		"choices": [
+			{ "str": "0"},
+			{ "str": "1"},
+			{ "str": "sqrt(3) / 2 ", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Care afirmatie este adevarata?",
+		"choices": [
+			{ "str": "O tabela de facts poate fi asociata la mai multe dimensiuni", "isCorrect": true},
+			{ "str": "O tabela de dimensiuni poate fi asociata la mai multe tabele de facts"},
+			{ "str": "Ambele afirmatii sunt adevarate"}
+		]
+	},
+	{
+		"quest": "Care afirmatie este adevarata?",
+		"choices": [
+			{ "str": "Putem alege schema fulg-de-nea din schema star prin denormalizare", "isCorrect": true},
+			{ "str": "Putem alege schema star din schema fulg-de-nea prin denormalizare"},
+			{ "str": "Ambele afirmatii sunt adevarate"}
+		]
+	},
+	{
+		"quest": "Declararea grain-ului inseamna a specifica:",
+		"choices": [
+			{ "str": "o coloana din tabela de fapte"},
+			{ "str": "o linie din tabela de fapte", "isCorrect": true},
+			{ "str": "Ambele afirmatii sunt false"}
+		]
+	},
+	{
+		"quest": "In Oracle SYS este:",
+		"choices": [
+			{ "str": "un user", "isCorrect": true},
+			{ "str": "un privilegiu"},
+			{ "str": "un rol"}
+		]
+	},
+	{
+		"quest": "In cazul implementarii tranzactiilor AF prin automate finite, procesul de obtinere a acestora presupune introducerea unor obiecte administrative, printre care si:",
+		"choices": [
+			{ "str": "Entitate de apelare"},
+			{ "str": "Functie de iesire"},
+			{ "str": "Functie de transmisie", "isCorrect": true}
+		]
+	},
+	{
+		"quest": "Regula de clasificare a fluxurilor in FD si FDC spune ca un flux este FDC si in cazul in care:",
+		"choices": [
+			{ "str": "Uneste doua functii elementare"},
+			{ "str": "Uneste doua entitati, una de intrare si una de iesire"},
+			{ "str": "Iese dintr-un element al multimii de stop", "isCorrect": true}
+		]
+	}
+	
+]

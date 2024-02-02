@@ -92,7 +92,7 @@ function App() {
 		}
 	};
 
-	const defaultFiles = ["ubdquestions.json"];
+	const defaultFiles = ["ubdquestions.json", "ubd-exam.json"];
 
 	return (
 		<div style={{ width: "100vw", display: "" }}>
