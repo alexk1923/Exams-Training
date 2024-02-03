@@ -30,6 +30,7 @@ export default function Question(props: QuestionProps) {
 	const [multipleChoice, setMultipleChoice] = useState(true);
 
 	useEffect(() => {
+		// @TODO Check if it is a multiple choice or simple choice exam by props
 		if (false) {
 			let numberOfCorrectChoice = question.choices.reduce(
 				(acc: number, currentElem) => {
