@@ -30,19 +30,21 @@ export default function Question(props: QuestionProps) {
 	const [multipleChoice, setMultipleChoice] = useState(true);
 
 	useEffect(() => {
-		let numberOfCorrectChoice = question.choices.reduce(
-			(acc: number, currentElem) => {
-				if (currentElem.isCorrect) {
-					return acc + 1;
-				} else {
-					return acc;
-				}
-			},
-			0
-		);
-		// if (numberOfCorrectChoice > 1) {
-		// 	setMultipleChoice(true);
-		// }
+		if (false) {
+			let numberOfCorrectChoice = question.choices.reduce(
+				(acc: number, currentElem) => {
+					if (currentElem.isCorrect) {
+						return acc + 1;
+					} else {
+						return acc;
+					}
+				},
+				0
+			);
+			if (numberOfCorrectChoice > 1) {
+				setMultipleChoice(true);
+			}
+		}
 	}, []);
 
 	const getQuestionStateStyle = (questionChoice: ChoiceType) => {
