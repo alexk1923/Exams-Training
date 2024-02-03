@@ -888,8 +888,11 @@
 	{
 		"quest": "Care dintre urmatoarele sunt activitati secundare in lantul de creare de valoare?",
 		"choices": [
-			{ "str": "Managementul personalului" },
-			{ "str": "Instalarea si Intretinerea infrastructurii" },
+			{ "str": "Managementul personalului", "isCorrect": true },
+			{
+				"str": "Instalarea si Intretinerea infrastructurii",
+				"isCorrect": true
+			},
 			{ "str": "Logistica" }
 		]
 	},
