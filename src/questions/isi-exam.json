@@ -237,7 +237,7 @@
 		]
 	},
 	{
-		"quest": "Metodele Agile se bazează pe dezvoltarea iterativă a sistemelor. Aceasta presupune:",
+		"quest": "!!!Metodele Agile se bazează pe dezvoltarea iterativă a sistemelor. Aceasta presupune:",
 		"choices": [
 			{
 				"str": "Integrarea şi testarea produsului după fiecare iteraţie",
@@ -622,7 +622,7 @@
 		"choices": [
 			{ "str": "stabileşte soluţia optimă din punct de vedere economic" },
 			{ "str": "stabileşte soluţia optimă din punct de vedere tehnologic" },
-			{ "str": "ajută la elaborarea cerințelor" }
+			{ "str": "ajută la elaborarea cerințelor", "isCorrect": true }
 		]
 	},
 	{
