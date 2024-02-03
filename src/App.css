@@ -43,6 +43,12 @@
 	font-weight: bold;
 }
 
+.selected-question {
+	background-color: #056180;
+	border-width: 3px;
+	color: white;
+}
+
 .search-bar input {
 	color: white;
 	border-radius: 999em;
