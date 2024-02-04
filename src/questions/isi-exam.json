@@ -237,14 +237,15 @@
 		]
 	},
 	{
-		"quest": "!!!Metodele Agile se bazează pe dezvoltarea iterativă a sistemelor. Aceasta presupune:",
+		"quest": "Metodele Agile se bazează pe dezvoltarea iterativă a sistemelor. Aceasta presupune:",
 		"choices": [
 			{
 				"str": "Integrarea şi testarea produsului după fiecare iteraţie",
 				"isCorrect": true
 			},
 			{
-				"str": "Obţinerea confirmării ferme a beneficiarului după fiecare iteraţie"
+				"str": "Obţinerea confirmării ferme a beneficiarului după fiecare iteraţie",
+				"isCorrect": true
 			},
 			{
 				"str": "Furnizarea cel puţin a unei componente funcţionale, la fiecare iteraţie"
@@ -490,7 +491,7 @@
 		]
 	},
 	{
-		"quest": "!!!!! Integrarea la nivelul interfeţei utilizator se face prin:",
+		"quest": "Integrarea la nivelul interfeţei utilizator se face prin:",
 		"choices": [
 			{ "str": "utilizarea unei metode unice de acces la resursele de calcul" },
 			{ "str": "acordarea unor drepturi de acces diferiţilor utilizatori." },
@@ -966,7 +967,7 @@
 		]
 	},
 	{
-		"quest": "!!!!!!!Care dintre afirmatii este corecta?",
+		"quest": "Care dintre afirmatii este corecta?",
 		"choices": [
 			{
 				"str": "Modelul tehnic prezinta componente computationale si informatiile asociate cu ele"
