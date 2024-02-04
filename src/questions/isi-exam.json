@@ -1013,5 +1013,122 @@
 			{ "str": "stabileste solutia optima din punct de vedere tehnologic" },
 			{ "str": "defineste perspectivele sistemului", "isCorrect": true }
 		]
+	},
+	{
+		"quest": "Care este rolul unui endpoint in contextul arhitecturii client-server",
+		"choices": [
+			{ "str": "Expunerea unei resurse in cadrul API", "isCorrect": true },
+			{ "str": "Accesibilitatea interfetei cu utilizatorul" },
+			{ "str": "Maparea accesului la  resursele hardware" }
+		]
+	},
+	{
+		"quest": "Care e diferenta dintre arhitectura two-tier si three-tier?",
+		"choices": [
+			{ "str": "Existenta unui backend", "isCorrect": true },
+			{ "str": "Baza de date" },
+			{ "str": "Nivelul de translatie" }
+		]
+	},
+	{
+		"quest": "Diagramele use case redau:",
+		"choices": [
+			{
+				"str": "comportamentul sistemului din perspectiva utilizarii",
+				"isCorrect": true
+			},
+			{ "str": "structura si comportamentul sistemului informatic integrat" },
+			{ "str": "interactiunea dintre componentele interne ale sistemului" }
+		]
+	},
+	{
+		"quest": "Adaptarea unui sistem pentru care modelul nu este cunoscut se incadreaza in:",
+		"choices": [
+			{
+				"str": "forward engineering"
+			},
+			{ "str": "reverse engineering", "isCorrect": true },
+			{ "str": "roundtrip engineering" }
+		]
+	},
+	{
+		"quest": "Punctul de vedere informaţional",
+		"choices": [
+			{
+				"str": "surprinde informatiile, intrebuintarea si interpretarea lor",
+				"isCorrect": true
+			},
+			{
+				"str": "surprinde comportamentele relative la procesele de afaceri ale organizatiei"
+			},
+			{
+				"str": "surprinde tipul de tehnologie ales pentru implementarea sistemului informatic si a comunicarii intre componentele lui",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Integrarea datelor necesită",
+		"choices": [
+			{
+				"str": "analiza arhitecturii solutiilor existente in organizatie - pot fi foarte diferite ca tip",
+				"isCorrect": true
+			},
+			{
+				"str": "identificarea tehnologiilor utilizate pentru procesarea datelor - pot fi foarte diferite ca tip",
+				"isCorrect": true
+			},
+			{
+				"str": "stabilirea scenariilor de procesare a datelor din surse diferite",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Problemele legate de politica sistemului se referă la aspecte",
+		"choices": [
+			{
+				"str": "securitate (acces la resurse)",
+				"isCorrect": true
+			},
+			{
+				"str": "disponibilitate (furnizarea serviciilor in mod predictibil)",
+				"isCorrect": true
+			},
+			{
+				"str": "performanta (timpul de raspuns al sistemului)",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Atunci când componentele comunicante au modele de interfață reprezentând implementari incotibile din același domeniu conceptual vorbim de un",
+		"choices": [
+			{
+				"str": "conflict de conceptualizare",
+				"isCorrect": true
+			},
+			{
+				"str": "conflict de domeniu de aplicare"
+			},
+			{
+				"str": "conflict de interpretare"
+			}
+		]
+	},
+	{
+		"quest": "Care dintre următoarele sunt principii de proiectare",
+		"choices": [
+			{
+				"str": "performanta"
+			},
+			{
+				"str": "extensabilitate"
+			},
+			{
+				"str": "modularizare",
+				"isCorrect": true
+			}
+		]
 	}
 ]
