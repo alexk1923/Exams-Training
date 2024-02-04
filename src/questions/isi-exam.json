@@ -107,8 +107,7 @@
 				"isCorrect": true
 			},
 			{
-				"str": "alege cat mai precis tipul de tehnologie pentru implementarea sistemului si a comunicarii intre componentele lui",
-				"isCorrect": true
+				"str": "alege cat mai precis tipul de tehnologie pentru implementarea sistemului si a comunicarii intre componentele lui"
 			}
 		]
 	},
@@ -1123,10 +1122,28 @@
 				"str": "performanta"
 			},
 			{
-				"str": "extensabilitate"
+				"str": "extensabilitate",
+				"isCorrect": true
 			},
 			{
 				"str": "modularizare",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Care dintre urmatoarele aspecte sunt esnetiale in dezovltarea sistemelor informatice?",
+		"choices": [
+			{
+				"str": "Adapatarea solutiei la domeniu",
+				"isCorrect": true
+			},
+			{
+				"str": "Gestionarea resurselor umane implicate",
+				"isCorrect": true
+			},
+			{
+				"str": "Utilizarea principiilor de proiectare",
 				"isCorrect": true
 			}
 		]
