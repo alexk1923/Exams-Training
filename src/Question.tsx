@@ -17,6 +17,7 @@ type QuestionProps = {
 	originalId: number;
 	randomIdx: number;
 	rerenderQuestions: boolean;
+	multipleAnswers: boolean;
 };
 
 export default function Question(props: QuestionProps) {
@@ -27,26 +28,7 @@ export default function Question(props: QuestionProps) {
 	});
 	const [selectedChoices, setSelectedChoices] = useState<ChoiceType[]>([]);
 	const [revealAnswers, setRevealAnswers] = useState(false);
-	const [multipleChoice, setMultipleChoice] = useState(true);
-
-	useEffect(() => {
-		// @TODO Check if it is a multiple choice or simple choice exam by props
-		if (false) {
-			let numberOfCorrectChoice = question.choices.reduce(
-				(acc: number, currentElem) => {
-					if (currentElem.isCorrect) {
-						return acc + 1;
-					} else {
-						return acc;
-					}
-				},
-				0
-			);
-			if (numberOfCorrectChoice > 1) {
-				setMultipleChoice(true);
-			}
-		}
-	}, []);
+	const { multipleAnswers } = props;
 
 	const getQuestionStateStyle = (questionChoice: ChoiceType) => {
 		// Answers are not revealed yet
@@ -72,7 +54,9 @@ export default function Question(props: QuestionProps) {
 	};
 
 	const handleAnswerClick = (choice: ChoiceType) => {
-		if (!multipleChoice) {
+		console.log("answer click");
+
+		if (!multipleAnswers) {
 			setSelectedAnswer((prevSelectedAnswer) => {
 				const state = choice.isCorrect
 					? AnsweredQuestionState.CORRECT
@@ -94,7 +78,7 @@ export default function Question(props: QuestionProps) {
 	};
 
 	const correctAnswer = () => {
-		if (!multipleChoice) {
+		if (!multipleAnswers) {
 		}
 
 		let numberOfCorrectChoice = question.choices.reduce(
@@ -146,6 +130,8 @@ export default function Question(props: QuestionProps) {
 	useEffect(() => {
 		setScrollId(0);
 		setSelectedAnswer({ state: null });
+		setRevealAnswers(false);
+		setSelectedChoices([]);
 	}, [rerenderQuestions, setScrollId]);
 
 	useEffect(() => {
@@ -166,7 +152,7 @@ export default function Question(props: QuestionProps) {
 					{questionChoice.str}
 				</div>
 			))}
-			<button onClick={handleSubmitAnswer}>Answer</button>
+			{multipleAnswers && <button onClick={handleSubmitAnswer}>Answer</button>}
 			<p>
 				Your answer was:{" "}
 				<span

@@ -4,6 +4,7 @@ import Question from "./Question";
 import React from "react";
 import { addUniqueId, shuffleQuestions } from "./utils/utils";
 import { QuestionType } from "./types/types";
+import { FormLabel, Switch } from "@mui/material";
 
 const SECTION_SIZE = 20;
 
@@ -21,6 +22,8 @@ function App() {
 	const [allMode, setAllMode] = useState(false);
 	const [searchQuestion, setSearchQuestion] = useState<string>("");
 	const [rerenderQuestions, setRerenderQuestions] = useState<boolean>(false);
+	const [multipleAnswers, setMultipleAnswers] = useState(false);
+
 	useEffect(() => {
 		if (scrollId >= 0 && scrollId < questions.length) {
 			refs.current[scrollId].current?.scrollIntoView({
@@ -33,6 +36,8 @@ function App() {
 		const start = SECTION_SIZE * (currentSection - 1);
 		const end = SECTION_SIZE * currentSection;
 
+		console.log(questions.length);
+
 		setFilteredQuestions(
 			shuffleQuestions(questions.slice(start, end)) as QuestionType[]
 		);
@@ -40,9 +45,7 @@ function App() {
 
 	useEffect(() => {
 		setFilteredQuestions(
-			shuffleQuestions(
-				questions.slice(0, questions.length - 1)
-			) as QuestionType[]
+			shuffleQuestions(questions.slice(0, questions.length)) as QuestionType[]
 		);
 	}, [allMode, questions]);
 
@@ -76,7 +79,7 @@ function App() {
 	};
 
 	useEffect(() => {
-		setNumberOfSections(Math.floor(questions.length / SECTION_SIZE) + 1);
+		setNumberOfSections(Math.ceil(questions.length / SECTION_SIZE));
 	}, [questions]);
 
 	const handleChooseDefault = async (fileName: string) => {
@@ -107,6 +110,12 @@ function App() {
 							{defaultFile}
 						</div>
 					))}
+					<FormLabel>Multiple answers</FormLabel>
+					<Switch
+						aria-label='multiple answer switch'
+						checked={multipleAnswers}
+						onChange={() => setMultipleAnswers((prev) => !prev)}
+					/>
 				</div>
 
 				<div className='selection-container'>
@@ -187,6 +196,7 @@ function App() {
 										originalId={question.id}
 										randomIdx={question.id}
 										rerenderQuestions={rerenderQuestions}
+										multipleAnswers={multipleAnswers}
 									/>
 								</div>
 							))
@@ -198,6 +208,7 @@ function App() {
 									originalId={question.id}
 									randomIdx={index}
 									rerenderQuestions={rerenderQuestions}
+									multipleAnswers={multipleAnswers}
 								/>
 							</div>
 					  ))}
