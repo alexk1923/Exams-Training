@@ -95,7 +95,12 @@ function App() {
 		}
 	};
 
-	const defaultFiles = ["ubdquestions.json", "ubd-exam.json", "isi-exam.json"];
+	const defaultFiles = [
+		"ubdquestions.json",
+		"ubd-exam.json",
+		"isi-exam.json",
+		"idp-exam.json",
+	];
 
 	return (
 		<div style={{ width: "100vw", display: "" }}>
