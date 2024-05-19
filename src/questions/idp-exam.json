@@ -18,7 +18,7 @@
 		]
 	},
 	{
-		"quest": "Care din variantele de mai jos NU este o solutie de a elimina efectele intretaierii intereselor?",
+		"quest": "Care dintre urmatoarele tehnologiii este eficienta si scalabila pentru a intoarce raspunsul pentru client intr-un serviciu REST?",
 		"choices": [
 			{ "str": "JSON", "isCorrect": true },
 			{ "str": "TEXT" },
