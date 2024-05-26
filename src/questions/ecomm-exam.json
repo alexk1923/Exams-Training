@@ -385,26 +385,7 @@
 			{ "str": "Tehnici bazate pe o întrebare specificată", "isCorrect": true }
 		]
 	},
-	{
-		"quest": "Un sistem CRM (Customer Relationship Management):",
-		"choices": [
-			{
-				"str": "ofera configurarea rapida a unui sistem de management al relațiilor cu clienții pentru activitățile acestora"
-			},
-			{
-				"str": "reprezintă un set de soluții proiectate pentru a organiza atât interacțiunea în cadrul departamentelor, cât și interacțiunea cu toti clienții, furnizorii și alte companii",
-				"isCorrect": true
-			},
-			{
-				"str": "unifică şi coordonează toate canalele prin care clientul interacţionează cu firma",
-				"isCorrect": true
-			},
-			{
-				"str": "ajuta la identificarea mijloacelor prin care se pot face cele mai profitabile investitii",
-				"isCorrect": true
-			}
-		]
-	},
+
 
 	{
 		"quest": "Care dintre etapele urmatoare fac parte din etapele tipice unui proces de data mining?",
