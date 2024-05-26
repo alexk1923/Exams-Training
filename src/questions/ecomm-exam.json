@@ -82,7 +82,10 @@
 				"str": "extrag datele tranzactionale, stocheaza si administreaza datele într-un sistem multidimesional de baze de date",
 				"isCorrect": true
 			},
-			{ "str": "ajuta la detectarea unor comportamente asociate fraudelor" },
+			{
+				"str": "ajuta la detectarea unor comportamente asociate fraudelor",
+				"isCorrect": true
+			},
 			{
 				"str": "selecteaza caracteristicile unui sistem optim, fiabil si flexibil"
 			},
@@ -831,7 +834,8 @@
 				"isCorrect": true
 			},
 			{
-				"str": "ofera configurarea rapida a unui sistem de management al relațiilor cu clienții pentru activitățile acestora"
+				"str": "ofera configurarea rapida a unui sistem de management al relațiilor cu clienții pentru activitățile acestora",
+				"isCorrect": true
 			},
 			{
 				"str": "unifică şi coordonează toate canalele prin care clientul interacţionează cu firma",
