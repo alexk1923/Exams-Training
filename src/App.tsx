@@ -100,6 +100,7 @@ function App() {
 		"ubd-exam.json",
 		"isi-exam.json",
 		"idp-exam.json",
+		"ecomm-exam.json",
 	];
 
 	return (

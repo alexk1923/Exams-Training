@@ -1,0 +1,919 @@
+[
+	{
+		"quest": "Care dintre urmatoarele utilitare asigura securitatea sistemelor de comert electronic?",
+		"choices": [
+			{ "str": "Serverele PROXY", "isCorrect": true },
+			{ "str": "Potocolul HTTP" },
+			{ "str": "Retele VPN", "isCorrect": true },
+			{ "str": "Protocolul SSL", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Asigurarea securitatii datelor implica atingerea unor obiective precum:",
+		"choices": [
+			{ "str": "Confidentialitate", "isCorrect": true },
+			{ "str": "Valabilitate", "isCorrect": true },
+			{ "str": "Vulnerabilitate" },
+			{ "str": "Nonrepudiere", "isCorrect": true },
+			{ "str": "Profitabilitate" }
+		]
+	},
+	{
+		"quest": "La ce se refera termenul de „nonrepudiere”?",
+		"choices": [
+			{
+				"str": "confirmarea celui care primeste un email ca cel care a trimis mesajul este cu adevarat persoana care pretinde ca este si semneza.",
+				"isCorrect": true
+			},
+			{
+				"str": "abilitatea de identificare a identității persoanei implicate în activitatea comercială pe Internet."
+			},
+			{
+				"str": "accesul neautorizat al persoanelor la informații care nu le sunt dedicate."
+			}
+		]
+	},
+	{
+		"quest": "Ce fel de sistem de plata online este PayPal?",
+		"choices": [
+			{
+				"str": "sistem bazat pe o valoare depozitata in prealabil",
+				"isCorrect": true
+			},
+			{ "str": "Sistem bazat pe jetoane electronice." },
+			{
+				"str": "Sistem securizat de transfer automat al banilor dintr-un cont bancar."
+			}
+		]
+	},
+	{
+		"quest": "Ce este protocolul SET = Secured Electronic Transaction?",
+		"choices": [
+			{
+				"str": "o metoda de plata creata de consortiul coordonat de MasterCard si Visa",
+				"isCorrect": true
+			},
+			{
+				"str": "un protocol specializat pe criptarea tranzactiilor bazate pe cartile de credit sau debit utilizand certificate digitale",
+				"isCorrect": true
+			},
+			{
+				"str": "o interfață ce activează browserul Web și aplicațiile de plată."
+			}
+		]
+	},
+	{
+		"quest": "Care sunt avantajele efectuarii platilor prin mijloace electronice?",
+		"choices": [
+			{ "str": "Securizarea procesului tranzacțional" },
+			{ "str": "reducerea costurilor", "isCorrect": true },
+			{ "str": "scaderea riscului de aparitie a erorilor", "isCorrect": true },
+			{ "str": "Validarea tranzacțiilor financiare" },
+			{
+				"str": "reducerea timpului necesar realizarii operatiunilor",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "?????????? Tehnicile de data mining:",
+		"choices": [
+			{
+				"str": "extrag datele tranzactionale, stocheaza si administreaza datele într-un sistem multidimesional de baze de date",
+				"isCorrect": true
+			},
+			{ "str": "ajuta la detectarea unor comportamente asociate fraudelor" },
+			{
+				"str": "selecteaza caracteristicile unui sistem optim, fiabil si flexibil"
+			},
+			{
+				"str": "analizeaza datele si prezinta datele sub formă de tabele si grafice",
+				"isCorrect": true
+			},
+			{
+				"str": "determina cea mai buna strategie de business pentru optimizarea profitabilitatii"
+			}
+		]
+	},
+	{
+		"quest": "Urmatorii indicatori fac parte din categoria „Indicatori tranzactionali”:",
+		"choices": [
+			{ "str": "Fluxul vizitatorilor" },
+			{
+				"str": "Rata de succes măsoară eficacitatea inițiativelor online în generarea rezultatelor"
+			},
+			{ "str": "Numărul total de tranzacţii pe zile", "isCorrect": true },
+			{ "str": "Procentul noilor vizitatori" },
+			{ "str": "Scorul de profitabilitate", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Indicatorii de performanta sunt impartiti in urmatoarele categorii:",
+		"choices": [
+			{
+				"str": "Indicatori de analiza, indicatori de evaluare si indicatori tranzacționali"
+			},
+			{ "str": "Indicatori de interacțiune si indicatori tranzacționali" },
+			{ "str": "Indicatori generali ai site-ului si indicatori de eficienta" },
+			{
+				"str": "Indicatori generali ai site-ului, indicatori de interacțiune si indicatori tranzacționali",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Sistemele de tip Marketing se integrează perfect cu:",
+		"choices": [
+			{ "str": "sistemul de plati" },
+			{ "str": "sistemul dedicat profilelor clienților", "isCorrect": true },
+			{ "str": "baza de date", "isCorrect": true },
+			{ "str": "sistemul dedicat comenzilor", "isCorrect": true },
+			{ "str": "catalogul", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Open Buying on the Internet (OBI) este:",
+		"choices": [
+			{
+				"str": "un standard lansat de OBI Consortium și susținut de InteliSys, Microsoft și Oracle",
+				"isCorrect": true
+			},
+			{
+				"str": "un standard conceput de Microsoft ce permite crearea unui profil al clientilor inclusiv preferințele și punctele lor de interes."
+			},
+			{
+				"str": "un standard care susține interoperabilitatea componentelor prin autentificare la cumpărare și managementul comenzilor",
+				"isCorrect": true
+			},
+			{ "str": "un standard care utilizeaza tehnologia SecureLink" },
+			{
+				"str": "un standard creat să asigure comunicarea între diverse sisteme de e-commerce",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Selectati care dintre urmatoarele sunt considerate tipuri de reguli data mining pentru e-commerce:",
+		"choices": [
+			{
+				"str": "Reguli secvențiale pentru a detecta căile tipice pe care cumpărătorii tind sa le aleagă",
+				"isCorrect": true
+			},
+			{ "str": "Reguli de corelatie cu clase de client" },
+			{ "str": "Reguli de identificare a clientilor profitabili" },
+			{
+				"str": "Reguli de asociere pentru analiza coșului de cumpărături",
+				"isCorrect": true
+			},
+			{
+				"str": "Reguli de clasificare pentru a găsi potențialii clienți pentru un anumit produs sau clasificarea comportamentului vizitatorilor site-ului.",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Modalități de creștere a traficului pentru un site de e-commerce:",
+		"choices": [
+			{ "str": "Creeaza campanii dedicate clienților fideli" },
+			{
+				"str": "Include un blog care să accentueze experiența siteului pentru comercializarea unei anumite categorii de produse",
+				"isCorrect": true
+			},
+			{
+				"str": "Păstrează clienții informați prin newsletter",
+				"isCorrect": true
+			},
+			{
+				"str": "Folosește tag-uri unice pentru fiecare titlu de pagină",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "“Web analytics” se refera la:",
+		"choices": [
+			{
+				"str": "analiză cantitativă şi calitativă a datelor din cadrul propriului site web",
+				"isCorrect": true
+			},
+			{
+				"str": "analiza interactiunilor dintre sistemele implicate intr-un site-ul de comert electronic"
+			},
+			{
+				"str": "măsurare, colectare, analiză şi raportare a datelor din mediul Internet, având ca scop inţelegerea şi optimizarea acestui mediu",
+				"isCorrect": true
+			},
+			{
+				"str": "cunoştinţele despre măsurarea audienţei din mediul internet",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Urmatorii indicatori fac parte din categoria „Indicatori generali ai site-ului”:",
+		"choices": [
+			{
+				"str": "Indicatori de tehnologie, precum browser-ul folosit, providerul de internet, tipul de dispozitive"
+			},
+			{ "str": "Rata de click pentru o anumită căutare", "isCorrect": true },
+			{ "str": "Numărul total de vizitatori", "isCorrect": true },
+			{ "str": "Fluxul vizitatorilor" }
+		]
+	},
+	{
+		"quest": "Ce abordare a arhitecturii definește modul în care se structurează şi se organizează sistemul la nivel conceptual pentru a asigura funcţionalităţile cerute de utilizator?",
+		"choices": [
+			{
+				"str": "Arhitectura programelor şi distribuirea lor pe echipamentele utilizate"
+			},
+			{ "str": "Arhitectura fizică" },
+			{ "str": "Arhitectura logică", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "???? Urmatorii indicatori fac parte din categoria „Indicatori de interactiune”:",
+		"choices": [
+			{ "str": "Timpul petrecut pe site pe vizitator" },
+			{ "str": "Numărul total de pagini vizionate" },
+			{
+				"str": "Timpul mediu petrecut în redirecţionări pentru a ajunge la pagina analizată",
+				"isCorrect": true
+			},
+			{
+				"str": "Indicatori de tehnologie, precum browser-ul folosit, providerul de internet, tipul de dispozitive",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Customizarea unui site de e-commerce se refera la:",
+		"choices": [
+			{
+				"str": "generarea automata a unui mediu prietenos, adecvat clientului"
+			},
+			{
+				"str": "păstrarea caracteristicilor clientului pe baza comportamentului său"
+			},
+			{
+				"str": "abilitatea de a schimba oferta de produse în funcție de așteptările clientului",
+				"isCorrect": true
+			},
+			{
+				"str": "personalizarea site-ului prin modificarea conţinutului în funcţie de comportamentul său"
+			}
+		]
+	},
+	{
+		"quest": "Sistemul Marketing are următoarele funcţii",
+		"choices": [
+			{ "str": "utilizeaza unor subsistem ce permit evaluarea expresiilor" },
+			{
+				"str": "satisfacerea clientului, capacitate de vânzare, publicitate, testare, campanii de email, reduceri de preţuri, cupoane",
+				"isCorrect": true
+			},
+			{ "str": "prioritizarea produselor din campanii", "isCorrect": true },
+			{ "str": "customizarea ofertei in functie de profilul furnizorului" }
+		]
+	},
+	{
+		"quest": "In cadrul unei arhitecturi de tip Open Market Distributed Commerce:",
+		"choices": [
+			{
+				"str": "sunt permise cataloage multiple pe mai multe servere",
+				"isCorrect": true
+			},
+			{
+				"str": "managementul de conţinut este separat de cel al tranzacţiilor",
+				"isCorrect": true
+			},
+			{
+				"str": "functionalitatile sprijina dezvoltarea aplicatiilor de tip business-to-business"
+			},
+			{
+				"str": "funcționalitatea sistemului este asigurată de două elemente ce susțin interoperabilitatea componentelor: autentificare la cumpărare și managementul comenzilor"
+			}
+		]
+	},
+	{
+		"quest": "In cazul metodei de plata de tip digital cash:",
+		"choices": [
+			{
+				"str": "se transmit jetoane (tokens) autentificate, reprezentând o valoare în numerar de la client la comerciant",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Modelarea stărilor și șabloanelor unui proces pentru a detecta căile tipice pe care cumpărătorii tind sa le aleagă:",
+		"choices": [
+			{
+				"str": "Este o regula secventiala de data mining pentru e-commerce",
+				"isCorrect": true
+			}
+		]
+	},
+
+	{
+		"quest": "Electronic Data Interchange (EDI) este un standard de comunicare:",
+		"choices": [
+			{
+				"str": "ce deserveste pieţele orizontale care serveșc mai multe medii diferite."
+			},
+			{
+				"str": "ce deserveste pieţele verticale ce oferă produse şi servicii pentru o anumită industrie.",
+				"isCorrect": true
+			},
+			{
+				"str": "pentru schimbul de documente de afaceri: facturi, ordine de plată, facturi de transport, numărul produselor din stoc şi alte informaţii de decontare între un număr mic de firme",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Traficul organic implica:",
+		"choices": [
+			{ "str": "Cost per actiune" },
+			{
+				"str": "Ierarhizare în funcţie de criterii de calitate specifice fiecărui site",
+				"isCorrect": true
+			},
+			{ "str": "Cost redus", "isCorrect": true },
+			{ "str": "Diversitate", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Un sistem CRM (Customer Relationship Management) analitic:",
+		"choices": [
+			{
+				"str": "Permite o colaborare mai ușoara cu toti clienții, furnizorii și partenerii de afaceri în vederea creșterii vânzarilor și a prestarilor de servicii pe toate canalele de marketing"
+			},
+			{ "str": "Permite angajaților sa ofere suport remote clientilor" },
+			{
+				"str": "Permite analizarea datelor despre clienți, date generate de aplicațiile CRM operaționale, precum și înțelegerea comportamentului clienților astfel încât acesta să devină predictibil.",
+				"isCorrect": true
+			},
+			{ "str": "Oferă doar suport pentru procese tip front-office" }
+		]
+	},
+	{
+		"quest": "Click-stream se refera la:",
+		"choices": [
+			{ "str": "analiza fluxului click-urilor successive", "isCorrect": true },
+			{
+				"str": "metoda folosită pentru a înţelege cea mai probabilă cale de navigare într-un site web cu scopul previziunii online a paginilor pe care un vizitator le va accesa",
+				"isCorrect": true
+			},
+			{
+				"str": "analiza datelor pe care un client le inregistreaza pe site in cadrul profilului sau"
+			},
+			{
+				"str": "secvenţă de pagini web vizualizate de un utilizator, paginile fiind afişate câte una pe rând la un moment dat",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Cele mai utilizate tipuri de tehnici data mining pentru e-commerce sunt:",
+		"choices": [
+			{ "str": "Tehnici bazate pe filtrare colaborativa", "isCorrect": true },
+			{ "str": "Tehnici bazate pe o keywords" },
+			{ "str": "Tehnici bazate pe analiza click-urilor" },
+			{ "str": "Tehnici bazate pe model", "isCorrect": true },
+			{ "str": "Tehnici bazate pe o întrebare specificată", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Un sistem CRM (Customer Relationship Management):",
+		"choices": [
+			{
+				"str": "ofera configurarea rapida a unui sistem de management al relațiilor cu clienții pentru activitățile acestora"
+			},
+			{
+				"str": "reprezintă un set de soluții proiectate pentru a organiza atât interacțiunea în cadrul departamentelor, cât și interacțiunea cu toti clienții, furnizorii și alte companii",
+				"isCorrect": true
+			},
+			{
+				"str": "unifică şi coordonează toate canalele prin care clientul interacţionează cu firma",
+				"isCorrect": true
+			},
+			{
+				"str": "ajuta la identificarea mijloacelor prin care se pot face cele mai profitabile investitii",
+				"isCorrect": true
+			}
+		]
+	},
+
+	{
+		"quest": "Care dintre etapele urmatoare fac parte din etapele tipice unui proces de data mining?",
+		"choices": [
+			{ "str": "preprocesarea datelor", "isCorrect": true },
+			{ "str": "transformarea datelor", "isCorrect": true },
+			{ "str": "integrarea datelor" },
+			{ "str": "codificarea datelor" },
+			{ "str": "determinarea de șabloane și modele", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Campaniile din cadrul unui sistem marketing:",
+		"choices": [
+			{
+				"str": "Se realizeaza prin vânzări sugestive ceea ce implica crearea unor expresii pe care să le utilizezi în cazul reducerilor sau a adăugării unor produse bonus",
+				"isCorrect": true
+			},
+			{
+				"str": "Faciliteaza atribuirea unor roluri specifice precum creator de continut sau administrator de marketing"
+			},
+			{
+				"str": "Se ocupa cu crearea de rapoarte si analize periodice ale vanzarilor"
+			},
+			{
+				"str": "Se realizeaza prin crearea şi trimiterea directă a mail-urilor la o listă de utilizatori",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "JSP (Java Server Pages) este:",
+		"choices": [
+			{
+				"str": "un standard ce definește modalitatea prin care software-ul de pe serverul web leagă site-ul de o aplicație de tip text numita script CGI, responsabil cu analizarea conținutului cerut de un client"
+			},
+			{
+				"str": "tehnologie ce permite dezvoltatorilor să genereze dinamic pagini web ca răspuns la cererile utilizatorilor, utilizand fragmente de cod Java, introduse in pagini HTML",
+				"isCorrect": true
+			},
+			{
+				"str": "un protocol pentru aplicații, ușor de implementat, destinat aplicațiilor ce interfațează cu serverele HTTP"
+			},
+			{
+				"str": "tehnologie Microsoft pentru creare de aplicații și servicii Web"
+			}
+		]
+	},
+	{
+		"quest": "Un sistem CRM (Customer Relationship Management) eficient ajuta la cresterea veniturilor prin:",
+		"choices": [
+			{ "str": "Clarificarea relatiilor cu bancile" },
+			{
+				"str": "Implicarea unor departamente specializate cu profesionisti non-tehnici"
+			},
+			{
+				"str": "Oferirea de valoare într-o manieră personalizată",
+				"isCorrect": true
+			},
+			{ "str": "Vânzarea de produse adiționale clienților existenți" },
+			{
+				"str": "Păstrarea clienților vechi și atragerea de clienți noi",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Un sistem CRM (Customer Relationship Management) colaborativ:",
+		"choices": [
+			{ "str": "Oferă doar suport pentru procese tip front-office" },
+			{
+				"str": "Permite o colaborare mai ușoara cu toti clienții, furnizorii și partenerii de afaceri în vederea creșterii vânzarilor și a prestarilor de servicii pe toate canalele de marketing",
+				"isCorrect": true
+			},
+			{
+				"str": "Permite analizarea datelor despre clienți, date generate de aplicațiile CRM operaționale, precum și înțelegerea comportamentului clienților astfel încât acesta să devină predictibil"
+			},
+			{ "str": "Permite angajaților sa ofere suport remote clientilor" }
+		]
+	},
+	{
+		"quest": "Traficul prin referinte se refera la:",
+		"choices": [
+			{
+				"str": "traficul generat în urma unei campanii de marketing, publicitate",
+				"isCorrect": true
+			},
+			{
+				"str": "traficul generat în urma unei stimulări financiare",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Care sunt nivelurile tipice pentru un model de arhitectură logică?",
+		"choices": [
+			{
+				"str": "Nivelul legat de logica problemei sau a activităţii de afaceri",
+				"isCorrect": true
+			},
+			{ "str": "Nivelul tranzacțional" },
+			{ "str": "Nivelul prezentare", "isCorrect": true },
+			{ "str": "Nivelul gestionării datelor", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Profilul unui utilizator:",
+		"choices": [
+			{
+				"str": "este un set de reguli care face posibila adaptarea ofertei in cadrul sistemului de marketing"
+			},
+			{
+				"str": "este un set de reguli ce descrie un comportament tipic al unui client sau grup de clienți pe site",
+				"isCorrect": true
+			},
+			{
+				"str": "este un set de reguli ce ajută la stabilirea unor șabloane specifice care pot fi identificate",
+				"isCorrect": true
+			},
+			{
+				"str": "este un set de reguli care face posibila autorizarea unor actiuni pe site legate de securitatea tranzactiilor"
+			}
+		]
+	},
+	{
+		"quest": "Web Usage Mining:",
+		"choices": [
+			{
+				"str": "se bazează pe analiza secvenţei de pagini vizitate în cadrul unei sesiuni date, numită analiza click-urilor web",
+				"isCorrect": true
+			},
+			{
+				"str": "se refera la metodele de extragere a regulilor de asociere sunt folositoare pentru obţinerea corelaţiilor dintre diferitele pagini vizitate în timpul unei sesiuni",
+				"isCorrect": true
+			},
+			{
+				"str": "se refera la metodele de extragere a datelor de conectare ale clientilor site-ului respectiv"
+			},
+			{
+				"str": "explorează căile de navigare şi comportamentele din timpul vizitei în cadrul unui site web.",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Indicatorii de performanţă sunt:",
+		"choices": [
+			{
+				"str": "parametrii ce semnaleaza erorile aparute in procesul transactional."
+			},
+			{
+				"str": "coeficienti pentru măsurarea progresului faţă de obiectivele propuse",
+				"isCorrect": true
+			},
+			{ "str": "concepte ce definesc calitatea managementului" },
+			{
+				"str": "măsurători cuantificabile ale unor stări ale afacerilor",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Intre criteriile de funcţionalităţi minimale ale unui sistem de management de continut (CMS) se afla:",
+		"choices": [
+			{
+				"str": "Existenta sabloanelor de pagini, făcând referire la designul şi mentenanţa structurii conţinutului, structurii paginii web şi structurii site-ului",
+				"isCorrect": true
+			},
+			{
+				"str": "Compatibilitatea sau interoperabilitatea - nivelul de interacţiuni şi colaborare dintre două sau mai multe sisteme"
+			},
+			{ "str": "Capacitatea asigurării integrităţii datelor" },
+			{
+				"str": "Scalabilitatea - capacitatea de adaptare la creşterile şi dezvoltările unor procese de lucru mai complexe."
+			},
+			{
+				"str": "Oferirea de analize statistice de utilizare pentru a obţine metrici de performanţă",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Sistemele de Management al Conținutului (CMS):",
+		"choices": [
+			{
+				"str": "Sunt sisteme ce permit adăugarea, editarea şi controlul total al oricărui aspect al site-ului web",
+				"isCorrect": true
+			},
+			{
+				"str": "sunt aplicatii realizate de entităţi terţe, contra-cost sau gratuite, pentru o anumită categorie de afaceri electronice, care sprijina interoperabilitatea modulelor dezvoltate in cadrul site-ului de eCommerce"
+			},
+			{
+				"str": "Sunt sisteme ce analizeaza comprtamentul clientului pe site, sprijinind customizarea ofertei pentru fiecare client in parte"
+			},
+			{
+				"str": "Sunt aplicaţii web ce facilitează ca un grup de persoane, de obicei din diferite departamente ale afacerii, să colaboreze şi să menţină platformele web",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "La ce se referă termenul de comerț electronic din punct de vedere e-business?",
+		"choices": [
+			{ "str": "Administrarea sistemului implicat" },
+			{
+				"str": "Vânzarea şi cumpărarea de bunuri şi servicii",
+				"isCorrect": true
+			},
+			{ "str": "Realizarea unor rapoarte periodice" },
+			{ "str": "Lucrul cu partenerii de afaceri", "isCorrect": true },
+			{
+				"str": "Gestionarea tranzacţiilor electronice în cadrul unei organizaţii",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Care dintre următoarele componente aparțin rolului de vânzător?",
+		"choices": [
+			{ "str": "Browser-ul web" },
+			{ "str": "Sistemul de procesare a plăţilor", "isCorrect": true },
+			{
+				"str": "Componenta responsabilă cu actualizarea conținutului afacerii",
+				"isCorrect": true
+			},
+			{
+				"str": "Sistemul de gestionare a tranzacţiilor electronice",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "E-Commerce Interoperability Standard (ECIS):",
+		"choices": [
+			{
+				"str": "organizează mai multe servicii de comerț electronic centrate în jurul unui singur agent. Acest agent este un punct central ce suportă conectivitate multiplă și interoperabilitate între mai mulți furnizori de servicii",
+				"isCorrect": true
+			},
+			{
+				"str": "utilizează criptarea cu cheie publică pentru a proteja datele din Internet"
+			},
+			{ "str": "permitea transmiterea informațiilor în rețele private" },
+			{
+				"str": "sustine comunitatea bancara si codifică numerele cardurilor de credit pe serverele comercianților"
+			}
+		]
+	},
+	{
+		"quest": "Daca utilizatorii care au cheltuit aproximativ 300 Ron în urma unei vizite pe site și au vizualizat articole pentru călătorie, vor avea afișate și oferte de excursii, atunci dezvoltatorul site-ului de e-commerce a implicat in implementare o tehnica de:",
+		"choices": [{ "str": "data mining bazata pe reguli", "isCorrect": true }]
+	},
+	{
+		"quest": "Data mining reprezinta:",
+		"choices": [
+			{
+				"str": "procesul de extragere a informațiilor relevante din aceste date folosind metode matematice și statistice",
+				"isCorrect": true
+			},
+			{
+				"str": "procesul de analiză a unor cantități mari de date",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Fluxul vizitatorilor sau „analiza funnel”:",
+		"choices": [
+			{
+				"str": "Este un indicator care arata cati dintre vizitatorii site-ului devin clienti ai acestuia.",
+				"isCorrect": true
+			},
+			{
+				"str": "Prezinta categoriile care sunt cel mai des vizitate de clienti"
+			},
+			{
+				"str": "Ofera date concrete legate de suma pe care fiecare client o cheltuieste pe site"
+			},
+			{
+				"str": "Este esenţială pentru înţelegerea modului în care utilizatorii acţionează pe site",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Etapele tipice ale unui proces de dezvoltare software sunt:",
+		"choices": [
+			{ "str": "Alocarea resurselor" },
+			{ "str": "Mentenanță", "isCorrect": true },
+			{ "str": "Analiza cerintelor", "isCorrect": true },
+			{ "str": "Testare", "isCorrect": true },
+			{ "str": "Proiectare", "isCorrect": true },
+			{ "str": "Managementul riscului" }
+		]
+	},
+	{
+		"quest": "Un sistem de marketing adecvat are in vedere:",
+		"choices": [
+			{ "str": "Plan de email pentru clienti", "isCorrect": true },
+			{ "str": "Social login", "isCorrect": true },
+			{ "str": "Live chat", "isCorrect": true },
+			{ "str": "Un plan eficient pentru promotii", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Modulele specifice sistemelor marketing sunt:",
+		"choices": [
+			{ "str": "Subsisteme ce permit evaluarea profilelor clientilor" },
+			{ "str": "Motoare ce permit evaluarea expresiilor", "isCorrect": true },
+			{
+				"str": "Module pentru managementul listelor de email-uri.",
+				"isCorrect": true
+			},
+			{ "str": "Campaniile", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "Care dintre următoarele componente fac parte din structura de bază a unei aplicații electronice de comerț?",
+		"choices": [
+			{
+				"str": "Componenta care administrează profilul utilizatorilor",
+				"isCorrect": true
+			},
+			{ "str": "Componenta pentru analiza traficului web" },
+			{ "str": "Coșul virtual de cumpărături", "isCorrect": true },
+			{ "str": "Baza de date a produselor", "isCorrect": true }
+		]
+	},
+
+	{
+		"quest": "Campaniile din cadrul unui sistem marketing:",
+		"choices": [
+			{
+				"str": "Se realizeaza prin vânzări sugestive ceea ce implica crearea unor expresii pe care să le utilizezi în cazul reducerilor sau a adăugării unor produse bonus",
+				"isCorrect": true
+			},
+			{
+				"str": "Faciliteaza atribuirea unor roluri specifice precum creator de continut sau administrator de marketing"
+			},
+			{
+				"str": "Se realizeaza prin crearea şi trimiterea directă a mail-urilor la o listă de utilizatori",
+				"isCorrect": true
+			},
+			{
+				"str": "Se ocupa cu crearea de rapoarte si analize periodice ale vanzarilor"
+			}
+		]
+	},
+
+	{
+		"quest": "Elementele unei aplicatii e-commerce ce pot sa integreze inteligenta artificiala sunt:",
+		"choices": [
+			{ "str": "Securitate cibernetica", "isCorrect": true },
+			{ "str": "CRM", "isCorrect": true },
+			{ "str": "Plati interbancare" },
+			{ "str": "Chatbots", "isCorrect": true },
+			{ "str": "Managementul inventarului", "isCorrect": true }
+		]
+	},
+
+	{
+		"quest": "Tehnicile NLP (Natural Language Processing) sunt utilizate in cazul implementarii unor module precum:",
+		"choices": [
+			{ "str": "Chatbots", "isCorrect": true },
+			{ "str": "Securitate cibernetica" },
+			{ "str": "Plati automate" },
+			{ "str": "Agent de vanzari" }
+		]
+	},
+
+	{
+		"quest": "In cazul metodei de plata de tip digital cash:",
+		"choices": [
+			{
+				"str": "cumpărătorul și vânzătorul trebuie sa aibă cont dedicat pentru eCash, iar identificarea lor sa se faca pe baza de date biometrice"
+			},
+			{
+				"str": "se transmit jetoane (tokens) autentificate, reprezentând o valoare în numerar de la client la comerciant",
+				"isCorrect": true
+			},
+			{
+				"str": "se are in vedere validatarea de jetoane (tokens) de către bancă, prin semnătură digitală înainte de transmitere.",
+				"isCorrect": true
+			},
+			{
+				"str": "se are in vedere o suma de bani depozitata in prealabil in banca, intr-un cont special dedicate pentru acest tip de tanzactii"
+			}
+		]
+	},
+	{
+		"quest": "Ce este protocolul SET (Secured Electronic Transaction)?",
+		"choices": [
+			{
+				"str": "o interfață ce activează browserul Web și aplicațiile de plată"
+			},
+			{
+				"str": "un protocol specializat pe criptarea tranzacțiilor bazate pe cărțile de credit sau debit utilizând certificate digitale",
+				"isCorrect": true
+			},
+			{
+				"str": "o metodă de plată creată de consorțiul coordonat de MasterCard și Visa.",
+				"isCorrect": true
+			}
+		]
+	},
+
+	{
+		"quest": "Sistemul Marketing are următoarele funcţii:",
+		"choices": [
+			{
+				"str": "satisfacerea clientului, capacitate de vânzare, publicitate, testare, campanii de email, reduceri de preţuri, cupoane",
+				"isCorrect": true
+			},
+			{ "str": "automatizarea platii in functie de profilul furnizorului" },
+			{ "str": "prioritizarea produselor din campanii", "isCorrect": true },
+			{ "str": "utilizeaza unor subsistem ce permit evaluarea expresiilor" }
+		]
+	},
+	{
+		"quest": "Un sistem CRM (Customer Relationship Management):",
+		"choices": [
+			{
+				"str": "ajuta la identificarea mijloacelor prin care se pot face cele mai profitabile investitii",
+				"isCorrect": true
+			},
+			{
+				"str": "reprezintă un set de soluții proiectate pentru a organiza atât interacțiunea în cadrul departamentelor, cât și interacțiunea cu toti clienții, furnizorii și alte companii",
+				"isCorrect": true
+			},
+			{
+				"str": "ofera configurarea rapida a unui sistem de management al relațiilor cu clienții pentru activitățile acestora"
+			},
+			{
+				"str": "unifică şi coordonează toate canalele prin care clientul interacţionează cu firma",
+				"isCorrect": true
+			}
+		]
+	},
+
+	{
+		"quest": "E-Commerce Interoperability Standard (ECIS):",
+		"choices": [
+			{
+				"str": "sustine comunitatea bancara si codifică numerele cardurilor de credit pe serverele comercianților"
+			},
+			{
+				"str": "organizează mai multe servicii de comerț electronic centrate în jurul unui singur agent. Acest agent este un punct central ce suportă conectivitate multiplă și interoperabilitate între mai mulți furnizori de servicii",
+				"isCorrect": true
+			},
+			{
+				"str": "utilizează criptarea cu cheie publică pentru a proteja datele din Internet"
+			},
+			{ "str": "permitea transmiterea informațiilor în rețele private" }
+		]
+	},
+	{
+		"quest": "Un sistem de marketing adecvat are in vedere:",
+		"choices": [
+			{ "str": "Plan de email pentru clienti", "isCorrect": true },
+			{ "str": "Social login", "isCorrect": true },
+			{ "str": "Un plan eficient pentru promotii", "isCorrect": true },
+			{ "str": "Un sistem de securitate adecvat" },
+			{ "str": "Live chat", "isCorrect": true }
+		]
+	},
+	{
+		"quest": "“Web analytics” se refera la:",
+		"choices": [
+			{
+				"str": "măsurare, colectare, analiză şi raportare a datelor din mediul Internet, având ca scop inţelegerea şi optimizarea acestui mediu",
+				"isCorrect": true
+			},
+			{
+				"str": "cunoştinţele despre măsurarea şi analiza audienţei din mediul internet",
+				"isCorrect": true
+			},
+			{
+				"str": "analiză cantitativă şi calitativă a datelor din cadrul propriului site web",
+				"isCorrect": true
+			},
+			{
+				"str": "analiza interactiunilor dintre sistemele implicate intr-un site-ul de comert electronic"
+			}
+		]
+	},
+	{
+		"quest": "Indicatorii de performanţă sunt:",
+		"choices": [
+			{
+				"str": "parametrii ce semnaleaza erorile aparute in procesul transactional."
+			},
+			{
+				"str": "măsurători cuantificabile ale unor stări ale afacerilor",
+				"isCorrect": true
+			},
+			{ "str": "concepte ce definesc calitatea managementului" },
+			{
+				"str": "coeficienti pentru măsurarea progresului faţă de obiectivele propuse",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"quest": "Care sunt avantajele efectuării plăților prin mijloace electronice?",
+		"choices": [
+			{ "str": "Scăderea riscului de apariție a erorilor", "isCorrect": true },
+			{ "str": "Reducerea costurilor", "isCorrect": true },
+			{ "str": "Criptarea procesului tranzacțional" },
+			{ "str": "Validarea tranzacțiilor financiare" },
+			{
+				"str": "Reducerea timpului necesar realizării operațiunilor",
+				"isCorrect": true
+			}
+		]
+	}
+]
