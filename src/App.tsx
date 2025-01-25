@@ -101,6 +101,7 @@ function App() {
 		"isi-exam.json",
 		"idp-exam.json",
 		"ecomm-exam.json",
+		"cloud-exam.json",
 	];
 
 	return (
