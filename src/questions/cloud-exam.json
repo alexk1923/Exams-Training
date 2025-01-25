@@ -427,19 +427,5 @@
 			{ "str": "SaaS" },
 			{ "str": "IaaS" }
 		]
-	},
-	{
-		"quest": "Care din variantele de mai jos este o diferenta dintre KVM si VirtualBox?",
-		"choices": [
-			{
-				"str": "Nu exista nicio diferenta notabila intre cele doua",
-				"isCorrect": true
-			},
-			{
-				"str": "KVM are suport pentru Linux ca sistem guest, pe cand VirtualBox nu are"
-			},
-			{ "str": "KVM este open-source, pe cand VirtualBox nu este" },
-			{ "str": "KVM are suport pentru x86, pe cand VirtualBox nu are" }
-		]
 	}
 ]
