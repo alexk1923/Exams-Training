@@ -18,11 +18,18 @@ type QuestionProps = {
 	randomIdx: number;
 	rerenderQuestions: boolean;
 	multipleAnswers: boolean;
+	currentSection: number;
 };
 
 export default function Question(props: QuestionProps) {
-	const { question, setScrollId, originalId, randomIdx, rerenderQuestions } =
-		props;
+	const {
+		question,
+		setScrollId,
+		originalId,
+		randomIdx,
+		rerenderQuestions,
+		currentSection,
+	} = props;
 	const [selectedAnswer, setSelectedAnswer] = useState<AnsweredQuestion>({
 		state: null,
 	});

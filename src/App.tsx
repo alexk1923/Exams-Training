@@ -220,6 +220,7 @@ function App() {
 									randomIdx={index}
 									rerenderQuestions={rerenderQuestions}
 									multipleAnswers={multipleAnswers}
+									currentSection={currentSection}
 								/>
 							</div>
 					  ))}
