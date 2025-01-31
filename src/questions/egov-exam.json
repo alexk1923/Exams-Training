@@ -80,9 +80,9 @@
 	{
 		"quest": "Ce fel de organizație virtuală implementați pentru Primăria Orașului Bușteni?",
 		"choices": [
-			{ "str": "Organizații virtuale de tip portal" },
+			{ "str": "Organizații virtuale de tip portal", "isCorrect": true },
 			{ "str": "Organizații virtuale de tip federal" },
-			{ "str": "Organizații virtuale de tip platformă", "isCorrect": true },
+			{ "str": "Organizații virtuale de tip platformă" },
 			{ "str": "Organizații virtuale de tip web" },
 			{ "str": "Organizații virtuale concentrice" }
 		]
