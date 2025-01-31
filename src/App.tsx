@@ -15,11 +15,11 @@ function App() {
 		[] as QuestionType[]
 	);
 	const [numberOfSections, setNumberOfSections] = useState<number>(0);
-	const [currentSection, setCurrentSection] = useState<number>(1);
+	const [currentSection, setCurrentSection] = useState<number>(0);
 	const [filteredQuestions, setFilteredQuestions] = useState<QuestionType[]>(
 		[]
 	);
-	const [allMode, setAllMode] = useState(false);
+	const [allMode, setAllMode] = useState(true);
 	const [searchQuestion, setSearchQuestion] = useState<string>("");
 	const [rerenderQuestions, setRerenderQuestions] = useState<boolean>(false);
 	const [multipleAnswers, setMultipleAnswers] = useState(false);
@@ -41,7 +41,7 @@ function App() {
 		setFilteredQuestions(
 			shuffleQuestions(questions.slice(start, end)) as QuestionType[]
 		);
-	}, [questions, currentSection]);
+	}, [questions, currentSection, allMode]);
 
 	useEffect(() => {
 		setFilteredQuestions(
@@ -66,10 +66,12 @@ function App() {
 
 	const handleChangeSection = (sectionClicked: number) => {
 		if (currentSection === sectionClicked) {
+			setAllMode(false);
 			const arr = [...filteredQuestions];
 			setFilteredQuestions(shuffleQuestions(arr) as QuestionType[]);
 			setRerenderQuestions((prevRerenderQuestions) => !prevRerenderQuestions);
 		} else {
+			setAllMode(false);
 			setCurrentSection(sectionClicked);
 		}
 	};
@@ -102,6 +104,7 @@ function App() {
 		"idp-exam.json",
 		"ecomm-exam.json",
 		"cloud-exam.json",
+		"egov-exam.json",
 	];
 
 	return (
@@ -204,6 +207,7 @@ function App() {
 										randomIdx={question.id}
 										rerenderQuestions={rerenderQuestions}
 										multipleAnswers={multipleAnswers}
+										currentSection={currentSection}
 									/>
 								</div>
 							))
