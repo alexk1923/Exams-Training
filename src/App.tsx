@@ -207,7 +207,6 @@ function App() {
 										randomIdx={question.id}
 										rerenderQuestions={rerenderQuestions}
 										multipleAnswers={multipleAnswers}
-										currentSection={currentSection}
 									/>
 								</div>
 							))
@@ -220,7 +219,6 @@ function App() {
 									randomIdx={index}
 									rerenderQuestions={rerenderQuestions}
 									multipleAnswers={multipleAnswers}
-									currentSection={currentSection}
 								/>
 							</div>
 					  ))}
