@@ -105,6 +105,7 @@ function App() {
 		"ecomm-exam.json",
 		"cloud-exam.json",
 		"egov-exam.json",
+		"smd.json",
 	];
 
 	return (
